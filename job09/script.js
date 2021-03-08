@@ -18,35 +18,32 @@ tri(numbers,order)
 
 function tri(numbers,order)
    {
+            var nombre_max = Math.max(...numbers)
+            console.log(nombre_max);
+         
 
-var pasocc = 'pas occurence'
+            for (i=0; i<=nombre_max; i++)
+            {
 
-for (i=0; i<numbers.length; i++)
-{
+               if(clef = numbers.indexOf(i) != -1  )
+               {
+                  if(typeof(resultat) == 'undefined')
+                  {
+                     clef = numbers.indexOf(i)
+                     console.log('dans if')
+                     resultat = [numbers[clef]]
+                     console.log(numbers[clef])
+                     console.log(resultat)
+                  }
+                  else{
+                     clef = numbers.indexOf(i)
+                     console.log('dans else')
+                     resultat.push(numbers[clef]);
+                     console.log(resultat)
+                  }
+               }
 
-    if(clef = numbers.indexOf(i) == -1  )
-    {
-      console.log(pasocc)
-    }
-    else{
-       if(typeof(resultat) == 'undefined')
-       {
-            clef = numbers.indexOf(i)
-          console.log('dans if')
-          resultat = [numbers[clef]]
-          console.log(numbers[clef])
-          console.log(resultat)
-         }
-         else{
-            clef = numbers.indexOf(i)
-            console.log('dans else')
-          resultat.push(numbers[clef]);
-          console.log(resultat)
-       }
-    }
-   
-
-
-}
-
+            }
+            alert(resultat)
+            return resultat
    }
