@@ -1,0 +1,42 @@
+
+var nombre1 = 11
+var nombre2 = 11
+
+
+alert(sommeNombresPremiers(nombre1,nombre2))
+
+function sommeNombresPremiers(nombre1,nombre2)
+   {
+
+         for(i = 2; i<nombre1; i++)
+         {
+            if(Number.isInteger(nombre1 / i))
+            {
+               var nombre1_non_premier = true
+            }
+         }
+
+         
+         for(i = 2; i<nombre2; i++)
+         {
+            if(Number.isInteger(nombre1 / i))
+            {
+               var nombre2_non_premier = true
+            }
+         }
+
+         if (!nombre1_non_premier && !nombre2_non_premier)
+         {
+            alert(nombre1 + ' et '+ nombre2 + ' sont des nombres premiers')
+            
+            alert( resultat = nombre1 + nombre2)
+         }
+         else{
+            alert('false')
+         }
+
+
+
+
+
+   }
