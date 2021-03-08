@@ -3,7 +3,10 @@ var nombre1 = 11
 var nombre2 = 11
 
 
-alert(sommeNombresPremiers(nombre1,nombre2))
+// alert(sommeNombresPremiers(nombre1,nombre2))
+sommeNombresPremiers(nombre1,nombre2)
+
+// console.log(sommeNombresPremiers(resulat))
 
 function sommeNombresPremiers(nombre1,nombre2)
    {
