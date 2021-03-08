@@ -2,26 +2,21 @@
 
 
 
-numbers = [1,5,8,6,7,3,2]
+numbers = [1,35,8,16,7,43,2,54,65,3]
 
-order = 'desc'
-// resultat = []
-// i = 2
-// console.log(numbers.indexOf(i))
-// var clef = numbers.indexOf(i)
-// console.log(numbers[clef])
+order = 'asc'
 
-// resultat.push(numbers[clef]);
-// console.log(resultat)
 
 tri(numbers,order)
 
+
 function tri(numbers,order)
    {
-            var nombre_max = Math.max(...numbers)
-            console.log(nombre_max);
-         
 
+      if(order == 'desc')
+      {
+            var nombre_max = Math.max(...numbers)
+         
             for (i=0; i<=nombre_max; i++)
             {
 
@@ -30,20 +25,42 @@ function tri(numbers,order)
                   if(typeof(resultat) == 'undefined')
                   {
                      clef = numbers.indexOf(i)
-                     console.log('dans if')
                      resultat = [numbers[clef]]
-                     console.log(numbers[clef])
-                     console.log(resultat)
                   }
                   else{
                      clef = numbers.indexOf(i)
-                     console.log('dans else')
                      resultat.push(numbers[clef]);
-                     console.log(resultat)
                   }
                }
 
             }
             alert(resultat)
             return resultat
+      }
+
+      if(order == 'asc')
+      {
+         var nombre_max = Math.max(...numbers)
+         console.log(nombre_max);
+      
+         for (i=nombre_max; i>=0; i--)
+         {
+
+            if(clef = numbers.indexOf(i) != -1  )
+            {
+               if(typeof(resultat) == 'undefined')
+               {
+                  clef = numbers.indexOf(i)
+                  resultat = [numbers[clef]]
+               }
+               else{
+                  clef = numbers.indexOf(i)
+                  resultat.push(numbers[clef]);
+               }
+            }
+
+         }
+         alert(resultat)
+         return resultat
+      }
    }
