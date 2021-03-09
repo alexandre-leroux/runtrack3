@@ -3,9 +3,9 @@
 
 var button = document.getElementById("button")
 
-button.addEventListener("click", recupereArticle);
+button.addEventListener("click", citation);
 
-function recupereArticle()
+function citation()
    {
 
       var test = document.getElementById('citation').innerHTML
