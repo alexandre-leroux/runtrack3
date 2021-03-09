@@ -11,4 +11,17 @@ body{
     position: fixed;
     top: 80vh;
     background-color: yellow;
+    transition: all 1s ease-in-out;
+}
+
+
+.footer.scroll{
+    background-color: rgb(255, 0, 191)!important;
+
+
+}
+.footer.scroll2{
+    background-color: rgb(4, 0, 255)!important;
+
+
 }

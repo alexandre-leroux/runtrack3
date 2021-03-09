@@ -16,7 +16,7 @@
 
 
 
-<footer id="footer">aaaa</footer>
+<footer id="footer" class="footer"></footer>
 
   <script src='script.js'></script>
   </body>
