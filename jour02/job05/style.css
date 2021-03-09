@@ -1,0 +1,14 @@
+body{
+
+    min-height: 4096px;
+    min-width: 4096px;
+}
+
+#footer{
+
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    top: 80vh;
+    background-color: yellow;
+}
