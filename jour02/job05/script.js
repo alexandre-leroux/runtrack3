@@ -24,5 +24,23 @@ window.addEventListener('scroll', () => {
         {
             footer.classList.remove('scroll2')
         }
+    if ( window.scrollY >1020)
+        {
+            footer.classList.add('scroll3')
+        }
+
+    if ( window.scrollY <1020)
+        {
+            footer.classList.remove('scroll3')
+        }
+    if ( window.scrollY >1360)
+        {
+            footer.classList.add('scroll4')
+        }
+
+    if ( window.scrollY <1360)
+        {
+            footer.classList.remove('scroll4')
+        }
     
 });
