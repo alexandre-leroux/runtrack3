@@ -10,7 +10,7 @@ $('#button').click(function () {
     {
       $('p').empty();
         $('#rangees img').appendTo($('#melangees'))
-
+        // location.reload();
         var parent = $("#melangees");
         var divs = parent.children();
         
