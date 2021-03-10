@@ -16,39 +16,10 @@ $('#button').click(function () {
 
 
 
-
-// $('#img4').click( function ()
-// {
-
-//   console.log("test")
-
-//   $('#img4').appendTo($('#rangees'))
-
-
-
-
-
-// })
-
-// $('#melangees img').click( function ()
-// {
-
-//   console.log("test")
-
-//   $('#melangees img').appendTo($('#rangees'))
-
-
-
-
-
-// })
 $('#melangees img').click( function ()
 {
 
-  console.log($('#melangees img'))
-
   var id = $(this).attr("id");
-
 
 
   $('#'+id).appendTo($('#rangees'))
