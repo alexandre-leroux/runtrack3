@@ -54,3 +54,32 @@ $('#melangees img').click( function ()
 
 })
 
+
+
+
+
+
+
+
+
+var victoire = ["img1", "img2", "img3", "img4", "img5", "img6"]
+console.log(victoire)
+
+
+
+
+var tableau =[]
+for ( i = 1; i<=6; i++)
+  {
+
+
+    var victoiregg = $('#rangees #img'+i).attr("id");
+    console.log(victoiregg)
+    tableau.push(victoiregg) 
+    console.log(tableau)
+
+  }
+
+
+
+
