@@ -9,9 +9,9 @@
   <body>
 
 
-<button id="button">melanger</button>
+<button  id="button">melanger</button>
 
-<div id="melangees">
+<div style="width: 850px; height: 500px; border: solid 1px" id="melangees">
 
   <img src="img/arc1.png" alt="" id="img1">
   <img src="img/arc2.png" alt="" id="img2">
@@ -23,7 +23,13 @@
 </div>
 
 
-<div id="rangees"></div>
+<div style="width: 850px; height: 500px; border: solid 1px"  id="rangees">
+
+
+
+
+
+</div>
 
 
 
