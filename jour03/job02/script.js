@@ -1,22 +1,14 @@
 
 
 
+$('#button').click(function () {
 
-$('#button').click(function()
-  {
-
-  $('<p>test<p>').appendTo($('#texte'));
-
+  var parent = $("#melangees");
+  var divs = parent.children();
+  
+  while (divs.length) {
+    let plop = divs.splice(Math.floor(Math.random() * divs.length), 1)[0];
+    console.log(divs)
+      parent.append(   plop  );
   }
-
-)
-
-
-$('#button_hide').click(function()
-  {
-
-  $('#texte').empty();
-
-  }
-
-)
+}) 

@@ -13,17 +13,12 @@
 
 <div id="melangees">
 
-
-<img src="img/arc1.png" alt="" id="img1">
-<img src="img/arc2.png" alt="" id="img2">
-<img src="img/arc3.png" alt="" id="img3">
-<img src="img/arc4.png" alt="" id="img4">
-<img src="img/arc5.png" alt="" id="img5">
-<img src="img/arc6.png" alt="" id="img6">
-
-
-
-
+  <img src="img/arc1.png" alt="" id="img1">
+  <img src="img/arc2.png" alt="" id="img2">
+  <img src="img/arc3.png" alt="" id="img3">
+  <img src="img/arc4.png" alt="" id="img4">
+  <img src="img/arc5.png" alt="" id="img5">
+  <img src="img/arc6.png" alt="" id="img6">
 
 </div>
 
