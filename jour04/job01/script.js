@@ -12,22 +12,8 @@
 //     $('body').html(result);
 //   }
 
-
-
-
-
 // })
-
-
-
-
-
-
-
-
 // }
-
-  
 //   )
 
 
@@ -39,7 +25,7 @@
         url: 'expression.txt',
         type: 'GET',
         datatype: 'html',
-        
+
       })
     .done(function(msg){
 
