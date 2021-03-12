@@ -55,6 +55,8 @@ $('#melangees img').click( function ()
   if (choix_fini == 6)
     {
       var victoire = ["img1", "img2", "img3", "img4", "img5", "img6"]
+
+       var tableau_joueur= 0
       var tableau_joueur =[]
 
       for ( i = 1; i<=6; i++)
@@ -72,7 +74,7 @@ $('#melangees img').click( function ()
         console.log(tableau_joueur[r])
         console.log(victoire[r] )
           console.log('boucle for')
-          if (tableau_joueur[0] == victoire[0]  )
+          if (tableau_joueur[r] == victoire[r]  )
           {
             point++
             console.log('if')
