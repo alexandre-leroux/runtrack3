@@ -1,19 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 $("#button").click(function(){
 
 
