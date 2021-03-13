@@ -17,12 +17,7 @@
     <input type="text" name="nom" id="nom" placeholder="nom">
 
     <select name="type" id="type">
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="hamster">Hamster</option>
-        <option value="parrot">Parrot</option>
-        <option value="spider">Spider</option>
-        <option value="goldfish">Goldfish</option>
+     
     </select>
 
     <input type="button" name="filter" id="filter" value="filtrer">

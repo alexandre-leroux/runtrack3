@@ -1,61 +1,86 @@
-$.getJSON( "string.json", function( data ) {
+var type = 'type'
+$.ajax({
+  type: "POST",
+  url: "pokemon.json",
+  dataType: "json",
+  // data: {type},
 
-  
-  // for (var i = 0; i < data.length; i++) {
+  success: function (data) {
+    var type_pokemon = []
+    for( i=0; i<data.length; i++)
+    {
 
-  //   console.log(data.name[0vf])
-
-  // }
-
+        for(x=0; x<data[i].type.length; x++)
+        {
 
 
+          type_pokemon.push(data[i].type[x])
+        }
+    }
+
+    type_filtre = type_pokemon.filter(
+                 function(a){if (!this[a]) {this[a] = 1; return a;}},
+                 {}
+                );
+      for(z=0; z<type_filtre.length; z++)
+      {
+        $('#type').append("<option value="+type_filtre[z]+">"+type_filtre[z]+"</option>")
+        
+
+      }
+    console.log(type_filtre)
+
+    
+  }
 });
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// $.getJSON( "pokemon.json", function( data ) {
-
-//   console.log(data)
-
-//   var items = [];
-
-//   $.each( data, function( key, val ) {
-//     items.push( "<li id='" + key + "'>" + val + "</li>" );
-//   });
- 
-//   $( "<ul/>", {
-//     "class": "my-new-list",
-//     html: items.join( "" )
-//   }).appendTo( "body" );
-
-//   console.log(data[0].name.french)
-// });
-
-
-
 $("#filter").click(function(){
+  console.log('bouton click')
 $.ajax({
-  url: "test.php",
+  url: "pokemon.json",
 
   data : {nom: $('#nom').val(),
           id:$('#id').val()} ,     
 
   type: "POST",
-  dataType: "text",
+  dataType: "json",
 
-  success : function(data){ console.log(data)
-    $("#resultat").append(data)
+  success : function(data){
+
+  console.log('entre dans fonction')
+    for( i=0; i<data.length; i++)
+    {
+      console.log('entre dans for')
+      console.log(data[i].name)
+
+        if (data[i].id == $('#id').val())
+        {
+
+          $('#resultat').append("<p>"+data[i].id+"</p></br>")
+          $('#resultat').append( "<p>"+data[i].name.french+"</p></br>")
+          $('#resultat').append( "<p>"+data[i].type+"</p></br>")
+          break
+        }
+
+        if (data[i].name.french == $('#nom').val())
+        {
+
+          $('#resultat').append("<p>"+data[i].id+"</p></br>")
+          $('#resultat').append( "<p>"+data[i].name.french+"</p></br>")
+          $('#resultat').append( "<p>"+data[i].type+"</p></br>")
+          break
+        }
+
+
+
+
+
+    }
+
+
+
   },
 
 })
