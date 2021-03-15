@@ -9,7 +9,7 @@
   </head>
   <body>
 
-
+<main>
 
 
 <?php if (@$_SESSION['prenom'])
@@ -22,9 +22,10 @@
 else
 {?>
 
-<a href="inscription.php">S'INSCRIRE</a></br>
-<a href="connexion.php">SE CONNECTER</a>
 
+
+<button id='s_inscrire'>S'INSCRIRE</button>
+<button id='se_connecter'>SE CONNECTER</button>
 
 <?php
 }
@@ -35,7 +36,7 @@ else
 
 
 
-
+</main>
 
 
 
