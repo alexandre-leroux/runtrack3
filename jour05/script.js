@@ -82,6 +82,13 @@ $.ajax({
           $("#erreur_mdp").append(data);
           return;
       }
+
+
+      if( data == 'est pas entre dans if')
+      {  
+          $("#email_erreur").append(data);
+          return;
+      }
      
       // window.location.href = "connexion.php";
 

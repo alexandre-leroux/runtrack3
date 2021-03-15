@@ -16,7 +16,7 @@ $users = $bdd->query('SELECT * FROM utilisateurs');
 $resultat = $users->fetchall();
 
 
-if(@$_POST['repere_inscription'])
+if(@$_POST['repere_inscription'] == 1)
 {
 
 
@@ -95,8 +95,12 @@ else
     }
 
 }
+else
+{
+    echo 'est pas entre dans if';
+}
 
-if($_POST['repere_connexion'])
+if(@$_POST['repere_connexion'])
 {
 
 
