@@ -39,7 +39,7 @@ margin: 6px;
 
 
 #conteneur_menu_burger{
-  display: none;
+  display: none ;
 }
 
 
@@ -57,7 +57,17 @@ margin: 6px;
 }
 
 
+@media screen and (min-width: 1600px) and (max-width: 8000px) {
 
+
+
+  #conteneur_menu_burger{
+    display: none !important;
+  }
+
+
+
+}
 
  @media screen and (min-width: 768px) and (max-width: 1599px) {
 
@@ -84,7 +94,7 @@ margin: 6px;
 @media screen and (max-width: 767px) {
 
   .section_principale {
-flex-direction: column;
+  flex-direction: column;
   }
 
   .lien_plein_format{
@@ -95,6 +105,8 @@ flex-direction: column;
     display: block;
  
   }
+
+
 
 }
 
