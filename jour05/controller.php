@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 
 try 
 {
@@ -14,6 +14,11 @@ catch (Exception $e)
 
 $users = $bdd->query('SELECT * FROM utilisateurs');
 $resultat = $users->fetchall();
+
+
+if(@$_POST['repere_inscription'])
+{
+
 
 if ( empty($_POST['nom'])  OR  empty($_POST['prenom'])  OR empty($_POST['email']) OR empty($_POST['mdp'])  OR empty($_POST['confirm_mdp']))
     {
@@ -76,7 +81,7 @@ else
                 $requete->bindParam(':mdp', $mdp);
 
                 $requete->execute();
-                header("Location: connexion.php");
+                // header("Location: connexion.php");
                 exit;
             }
         else
@@ -88,6 +93,41 @@ else
             
             
     }
+
+}
+
+if($_POST['repere_connexion'])
+{
+
+
+    if(empty($_POST['email_connexion'])  OR  empty($_POST['mdp_connexion']))
+        {
+            echo 'veuillez remplir tous les champs';
+            exit;
+        }
+    else
+        {
+            $users = $bdd->prepare('SELECT * FROM utilisateurs WHERE email = :email');
+            $users->execute(array( 'email' => $_POST['email_connexion']   ));
+            $donnees = $users->fetch();
+
+            if($donnees != NULL AND  password_verify($_POST['mdp_connexion'], $donnees['password'] ))
+                {
+                    $_SESSION['prenom'] = $donnees['prenom'];
+                   echo 'connexion validee';
+                   exit;
+                }
+
+            else
+                {
+                    echo 'erreur d\'email ou de mot de passe';
+                    exit;
+                }    
+        }
+
+
+}
+
 
 
 

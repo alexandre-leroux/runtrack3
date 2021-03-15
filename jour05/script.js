@@ -16,6 +16,22 @@ $('#s_inscrire').click(function(){
 
 })
 
+$('#se_connecter').click(function(){
+
+  $.ajax({
+
+    url: "connexion.php",
+    type: "POST",
+    dataType: "text",
+  
+    success : function(data){
+      $('main').empty();
+      $('main').append(data)
+    }
+  })
+
+})
+
 
 
 
@@ -29,6 +45,8 @@ $("#button").click(function(){
   var email = $('#email').val()
   var mdp = $('#mdp').val()
   var confirm_mdp = $('#confirm_mdp').val()
+
+  var repere_inscription = 1
   
 
 
@@ -36,7 +54,7 @@ $.ajax({
 
   url: "controller.php",
 
-  data : {nom,prenom,email,mdp,confirm_mdp },     
+  data : {nom,prenom,email,mdp,confirm_mdp,repere_inscription },     
 
   type: "POST",
   dataType: "text",
@@ -71,10 +89,13 @@ $.ajax({
 
         url: "connexion.php",
         type: "POST",
-        dataType: "html",
+        dataType: "text",
         success : function(data){ 
-          $('body').empty();
-          $('body').append(data)
+
+
+          
+          $('main').empty();
+          $('main').append(data)
         }
       })
 
@@ -83,5 +104,79 @@ $.ajax({
   }
 
 })
+
+})
+
+
+$('#button_connexion').click(function(){
+
+  var email_connexion = $('#email_connexion').val()
+  var mdp_connexion = $('#mdp_connexion').val()
+  var repere_connexion = 1
+
+  $.ajax({
+
+    url: "controller.php",
+    data : {email_connexion,mdp_connexion,repere_connexion},     
+    type: "POST",
+    dataType: "text",
+
+    success : function(data){
+
+      $("#email_erreur_connexion, #erreur_mdp_connexion").empty();
+
+      if( data == 'veuillez remplir tous les champs')
+      {  
+            $("#champs_erreur").append(data);
+            return;
+        }
+
+      if( data == 'erreur d\'email ou de mot de passe')
+      {  
+            $("#champs_erreur").append(data);
+            return;
+        }
+        
+      if( data == 'connexion validee')
+        {  
+          $.ajax({
+
+            url: "index.php",
+            type: "POST",
+            dataType: "text",
+            success : function(data){ 
+    
+    
+              
+              $('main').empty();
+              $('main').append(data)
+            }
+          })
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+      $('main').empty();
+      $('main').append(data)
+
+    }
+
+  })
+
+
+
+
+
+
+
 
 })
