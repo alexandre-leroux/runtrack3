@@ -1,6 +1,20 @@
 
 
+$('#s_inscrire').click(function(){
 
+  $.ajax({
+
+    url: "inscription.php",
+    type: "POST",
+    dataType: "text",
+  
+    success : function(data){
+      $('main').empty();
+      $('main').append(data)
+    }
+  })
+
+})
 
 
 
