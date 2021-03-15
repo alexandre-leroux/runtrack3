@@ -95,10 +95,7 @@ else
     }
 
 }
-else
-{
-    echo 'est pas entre dans if';
-}
+
 
 if(@$_POST['repere_connexion'])
 {
