@@ -45,7 +45,18 @@ $.ajax({
           return;
       }
      
-      window.location.href = "connexion.php";
+      // window.location.href = "connexion.php";
+
+      $.ajax({
+
+        url: "connexion.php",
+        type: "POST",
+        dataType: "html",
+        success : function(data){ 
+          $('body').empty();
+          $('body').append(data)
+        }
+      })
 
 
     
