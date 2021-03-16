@@ -10,7 +10,11 @@ align-items: center;
 
 
 
+.droppable{
+    width: 130px; 
+    height: 130px; 
 
+}
 
 
 #images_logo{
