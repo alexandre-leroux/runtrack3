@@ -20,7 +20,7 @@
     </div>
 
     <div ondrop="drop(event)" ondragover="allowDrop(event)" class="droppable" id="div_3">  
-      <img draggable="true" ondragstart="drag(event)" class="draggable" src="img/3.jpg" alt="" id="3">
+      <img draggable="false" ondragstart="drag(event)" class="draggable" src="img/3.jpg" alt="" id="3">
   </div>
 
     <div ondrop="drop(event)" ondragover="allowDrop(event)" class="droppable" id="div_4"> 
@@ -28,23 +28,23 @@
     </div>
 
     <div ondrop="drop(event)" ondragover="allowDrop(event)" class="droppable" id="div_5"> 
-     <img draggable="true" ondragstart="drag(event)" class="draggable" src="img/5.jpg" alt="" id="5">
+     <img draggable="false" ondragstart="drag(event)" class="draggable" src="img/5.jpg" alt="" id="5">
     </div>
 
     <div ondrop="drop(event)" ondragover="allowDrop(event)" class="droppable" id="div_6">
-      <img draggable="true" ondragstart="drag(event)" class="draggable" src="img/6.jpg" alt="" id="6">
+      <img draggable="false" ondragstart="drag(event)" class="draggable" src="img/6.jpg" alt="" id="6">
     </div>
 
     <div ondrop="drop(event)" ondragover="allowDrop(event)" class="droppable" id="div_7"> 
-     <img draggable="true" ondragstart="drag(event)" class="draggable" src="img/7.jpg" alt="" id="7">
+     <img draggable="false" ondragstart="drag(event)" class="draggable" src="img/7.jpg" alt="" id="7">
     </div>
 
     <div ondrop="drop(event)" ondragover="allowDrop(event)" class="droppable" id="div_8"> 
-     <img draggable="true" ondragstart="drag(event)" class="draggable" src="img/8.jpg" alt="" id="8">
+     <img draggable="false" ondragstart="drag(event)" class="draggable" src="img/8.jpg" alt="" id="8">
     </div>
 
     <div ondrop="drop(event)" ondragover="allowDrop(event)" class="droppable" id="div_9"> 
-     <img draggable="true" ondragstart="drag(event)" class="draggable" src="img/9.jpg" alt="" id="9">
+     <img draggable="false" ondragstart="drag(event)" class="draggable" src="img/9.jpg" alt="" id="9">
     </div>
 
 
