@@ -56,7 +56,7 @@ $('#melangees img').click( function ()
     {
       var victoire = ["img1", "img2", "img3", "img4", "img5", "img6"]
 
-       var tableau_joueur= 0
+      var tableau_joueur= 0
       var tableau_joueur =[]
 
       for ( i = 1; i<=6; i++)
