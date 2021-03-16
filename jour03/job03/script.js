@@ -68,9 +68,9 @@ function drop(ev) {
           for(x=2; x<10; x++)
             {
               $("#"+x+"").attr("draggable",'false')
-              $("#div_2 img").attr("draggable",'true')
-              $("#div_4 img").attr("draggable",'true')
             }
+            $("#div_2 img").attr("draggable",'true')
+            $("#div_4 img").attr("draggable",'true')
 
       }
 
@@ -80,10 +80,10 @@ function drop(ev) {
           for(x=2; x<10; x++)
             {
               $("#"+x+"").attr("draggable",'false')
-              $("#div_1 img").attr("draggable",'true')
-              $("#div_3 img").attr("draggable",'true')
-              $("#div_5 img").attr("draggable",'true')
             }
+            $("#div_1 img").attr("draggable",'true')
+            $("#div_3 img").attr("draggable",'true')
+            $("#div_5 img").attr("draggable",'true')
 
       }
 
@@ -93,9 +93,9 @@ function drop(ev) {
           for(x=2; x<10; x++)
             {
               $("#"+x+"").attr("draggable",'false')
-              $("#div_2 img").attr("draggable",'true')
-              $("#div_6 img").attr("draggable",'true')
             }
+            $("#div_2 img").attr("draggable",'true')
+            $("#div_6 img").attr("draggable",'true')
 
       }
 
@@ -105,10 +105,10 @@ function drop(ev) {
           for(x=2; x<10; x++)
             {
               $("#"+x+"").attr("draggable",'false')
-              $("#div_1 img").attr("draggable",'true')
-              $("#div_5 img").attr("draggable",'true')
-              $("#div_7 img").attr("draggable",'true')
             }
+            $("#div_1 img").attr("draggable",'true')
+            $("#div_5 img").attr("draggable",'true')
+            $("#div_7 img").attr("draggable",'true')
 
       }
 
@@ -118,11 +118,11 @@ function drop(ev) {
           for(x=2; x<10; x++)
             {
               $("#"+x+"").attr("draggable",'false')
-              $("#div_2 img").attr("draggable",'true')
-              $("#div_4 img").attr("draggable",'true')
-              $("#div_6 img").attr("draggable",'true')
-              $("#div_8 img").attr("draggable",'true')
             }
+            $("#div_2 img").attr("draggable",'true')
+            $("#div_4 img").attr("draggable",'true')
+            $("#div_6 img").attr("draggable",'true')
+            $("#div_8 img").attr("draggable",'true')
 
       }
 
@@ -132,10 +132,10 @@ function drop(ev) {
           for(x=2; x<10; x++)
             {
               $("#"+x+"").attr("draggable",'false')
-              $("#div_3 img").attr("draggable",'true')
-              $("#div_5 img").attr("draggable",'true')
-              $("#div_9 img").attr("draggable",'true')
             }
+            $("#div_3 img").attr("draggable",'true')
+            $("#div_5 img").attr("draggable",'true')
+            $("#div_9 img").attr("draggable",'true')
 
       }
 
@@ -145,9 +145,9 @@ function drop(ev) {
           for(x=2; x<10; x++)
             {
               $("#"+x+"").attr("draggable",'false')
-              $("#div_4 img").attr("draggable",'true')
-              $("#div_8 img").attr("draggable",'true')
             }
+            $("#div_4 img").attr("draggable",'true')
+            $("#div_8 img").attr("draggable",'true')
 
       }
 
@@ -157,10 +157,10 @@ function drop(ev) {
           for(x=2; x<10; x++)
             {
               $("#"+x+"").attr("draggable",'false')
-              $("#div_5 img").attr("draggable",'true')
-              $("#div_7 img").attr("draggable",'true')
-              $("#div_9 img").attr("draggable",'true')
             }
+            $("#div_5 img").attr("draggable",'true')
+            $("#div_7 img").attr("draggable",'true')
+            $("#div_9 img").attr("draggable",'true')
 
       }
 
@@ -170,9 +170,10 @@ function drop(ev) {
           for(x=2; x<10; x++)
             {
               $("#"+x+"").attr("draggable",'false')
-              $("#div_8 img").attr("draggable",'true')
-              $("#div_6 img").attr("draggable",'true')
             }
+
+            $("#div_8 img").attr("draggable",'true')
+            $("#div_6 img").attr("draggable",'true')
 
       }
 
