@@ -1,3 +1,9 @@
+$('#rafraichir').click(function() {
+  location.reload();
+});
+
+
+
 
 for (i = 1; i<10; i++)
 {
