@@ -54,126 +54,137 @@ function drop(ev) {
         return !$.trim(el.html())
       }
 
-      for(x=1; x<10; x++)
-        {
 
-          if (isEmpty($("#div_1")))
+
+    if (isEmpty($("#div_1")))
+      {
+
+          for(x=2; x<10; x++)
             {
-
-                for(x=2; x<10; x++)
-                  {
-                    $("#"+x+"").attr("draggable",'false')
-                    $("#div_2 img").attr("draggable",'true')
-                    $("#div_4 img").attr("draggable",'true')
-                  }
-
+              $("#"+x+"").attr("draggable",'false')
+              $("#div_2 img").attr("draggable",'true')
+              $("#div_4 img").attr("draggable",'true')
             }
 
-          if (isEmpty($("#div_2")))
+      }
+
+    if (isEmpty($("#div_2")))
+      {
+
+          for(x=2; x<10; x++)
             {
-
-                for(x=2; x<10; x++)
-                  {
-                    $("#"+x+"").attr("draggable",'false')
-                    $("#div_1 img").attr("draggable",'true')
-                    $("#div_3 img").attr("draggable",'true')
-                    $("#div_5 img").attr("draggable",'true')
-                  }
-
+              $("#"+x+"").attr("draggable",'false')
+              $("#div_1 img").attr("draggable",'true')
+              $("#div_3 img").attr("draggable",'true')
+              $("#div_5 img").attr("draggable",'true')
             }
 
-          if (isEmpty($("#div_3")))
+      }
+
+    if (isEmpty($("#div_3")))
+      {
+
+          for(x=2; x<10; x++)
             {
-
-                for(x=2; x<10; x++)
-                  {
-                    $("#"+x+"").attr("draggable",'false')
-                    $("#div_2 img").attr("draggable",'true')
-                    $("#div_6 img").attr("draggable",'true')
-                  }
-
+              $("#"+x+"").attr("draggable",'false')
+              $("#div_2 img").attr("draggable",'true')
+              $("#div_6 img").attr("draggable",'true')
             }
 
-          if (isEmpty($("#div_4")))
+      }
+
+    if (isEmpty($("#div_4")))
+      {
+
+          for(x=2; x<10; x++)
             {
-
-                for(x=2; x<10; x++)
-                  {
-                    $("#"+x+"").attr("draggable",'false')
-                    $("#div_1 img").attr("draggable",'true')
-                    $("#div_5 img").attr("draggable",'true')
-                    $("#div_7 img").attr("draggable",'true')
-                  }
-
+              $("#"+x+"").attr("draggable",'false')
+              $("#div_1 img").attr("draggable",'true')
+              $("#div_5 img").attr("draggable",'true')
+              $("#div_7 img").attr("draggable",'true')
             }
 
-          if (isEmpty($("#div_5")))
+      }
+
+    if (isEmpty($("#div_5")))
+      {
+
+          for(x=2; x<10; x++)
             {
-
-                for(x=2; x<10; x++)
-                  {
-                    $("#"+x+"").attr("draggable",'false')
-                    $("#div_2 img").attr("draggable",'true')
-                    $("#div_4 img").attr("draggable",'true')
-                    $("#div_6 img").attr("draggable",'true')
-                    $("#div_8 img").attr("draggable",'true')
-                  }
-
+              $("#"+x+"").attr("draggable",'false')
+              $("#div_2 img").attr("draggable",'true')
+              $("#div_4 img").attr("draggable",'true')
+              $("#div_6 img").attr("draggable",'true')
+              $("#div_8 img").attr("draggable",'true')
             }
 
-          if (isEmpty($("#div_6")))
+      }
+
+    if (isEmpty($("#div_6")))
+      {
+
+          for(x=2; x<10; x++)
             {
-
-                for(x=2; x<10; x++)
-                  {
-                    $("#"+x+"").attr("draggable",'false')
-                    $("#div_3 img").attr("draggable",'true')
-                    $("#div_5 img").attr("draggable",'true')
-                    $("#div_9 img").attr("draggable",'true')
-                  }
-
+              $("#"+x+"").attr("draggable",'false')
+              $("#div_3 img").attr("draggable",'true')
+              $("#div_5 img").attr("draggable",'true')
+              $("#div_9 img").attr("draggable",'true')
             }
 
-          if (isEmpty($("#div_7")))
+      }
+
+    if (isEmpty($("#div_7")))
+      {
+
+          for(x=2; x<10; x++)
             {
-
-                for(x=2; x<10; x++)
-                  {
-                    $("#"+x+"").attr("draggable",'false')
-                    $("#div_4 img").attr("draggable",'true')
-                    $("#div_8 img").attr("draggable",'true')
-                  }
-
+              $("#"+x+"").attr("draggable",'false')
+              $("#div_4 img").attr("draggable",'true')
+              $("#div_8 img").attr("draggable",'true')
             }
 
-          if (isEmpty($("#div_8")))
+      }
+
+    if (isEmpty($("#div_8")))
+      {
+
+          for(x=2; x<10; x++)
             {
-
-                for(x=2; x<10; x++)
-                  {
-                    $("#"+x+"").attr("draggable",'false')
-                    $("#div_5 img").attr("draggable",'true')
-                    $("#div_7 img").attr("draggable",'true')
-                    $("#div_9 img").attr("draggable",'true')
-                  }
-
+              $("#"+x+"").attr("draggable",'false')
+              $("#div_5 img").attr("draggable",'true')
+              $("#div_7 img").attr("draggable",'true')
+              $("#div_9 img").attr("draggable",'true')
             }
 
-          if (isEmpty($("#div_9")))
+      }
+
+    if (isEmpty($("#div_9")))
+      {
+
+          for(x=2; x<10; x++)
             {
-
-                for(x=2; x<10; x++)
-                  {
-                    $("#"+x+"").attr("draggable",'false')
-                    $("#div_8 img").attr("draggable",'true')
-                    $("#div_6 img").attr("draggable",'true')
-                  }
-
+              $("#"+x+"").attr("draggable",'false')
+              $("#div_8 img").attr("draggable",'true')
+              $("#div_6 img").attr("draggable",'true')
             }
 
+      }
 
+      var id_img2 = $("#div_2 img").attr("id");
+      var id_img3 = $("#div_3 img").attr("id");
+      var id_img4 = $("#div_4 img").attr("id");
+      var id_img5 = $("#div_5 img").attr("id");
+      var id_img6 = $("#div_6 img").attr("id");
+      var id_img7 = $("#div_7 img").attr("id");
+      var id_img8 = $("#div_8 img").attr("id");
+      var id_img9 = $("#div_9 img").attr("id");
 
-        }
+      if (isEmpty($("#div_1")) && id_img2 == 2 && id_img3 == 3 && id_img4 == 4 && id_img5 == 5 && id_img6 == 6 && id_img7 == 7 && id_img8 == 8 && id_img9 == 9                       )
+      {
+        console.log('victoiiiiiiiiiirrrrrrrrrrrreeeeeeeeeeeeeeee')
+        $('#messsage_victoire').append('VOUS AVEZ GAGNE')
+      }
+        
 
 
 

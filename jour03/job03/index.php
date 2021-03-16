@@ -9,7 +9,7 @@
   <body>
 
 
-<button  id="button">melanger</button>
+<button  id="button">melanger</button></br>
 
 <div  id="images_logo">
 
@@ -49,6 +49,8 @@
 
 
 </div>
+
+<p id='messsage_victoire'></p>
 
 
 
