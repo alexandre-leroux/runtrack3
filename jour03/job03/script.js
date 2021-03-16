@@ -1,6 +1,21 @@
 
 
 
+  $( ".draggable" ).draggable();
+  $( "#droppable" ).droppable({
+    drop: function( event, ui ) {
+      $( this )
+        .addClass( "ui-state-highlight" )
+        .find( "p" )
+          .html( "Dropped!" );
+    }
+  });
+
+
+
+
+
+
 // --------------------------------------------------------------melange
 $('#button').click(function () {
 

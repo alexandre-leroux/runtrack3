@@ -6,7 +6,7 @@ $('#button').click(function () {
 
   var melangees = $('#melangees img').length
 
-  if( melangees < 6)
+  if (melangees < 6)
     {
       $('p').empty();
         $('#rangees img').appendTo($('#melangees'))
@@ -56,10 +56,9 @@ $('#melangees img').click( function ()
     {
       var victoire = ["img1", "img2", "img3", "img4", "img5", "img6"]
 
-      var tableau_joueur= 0
-      var tableau_joueur =[]
+      var tableau_joueur = []
 
-      for ( i = 1; i<=6; i++)
+      for (let i = 1; i<=6; i++)
        {
          var ordre = $("#rangees img:nth-child("+i+")").attr("id");
          tableau_joueur.push(ordre) 
@@ -95,14 +94,14 @@ $('#melangees img').click( function ()
 
             if(point == 6)
             {
-              $('<p style="color: green">vous avez gagné<p>').appendTo($('#rangees'));
+              $('<p style="color: green">vous avez gagné<p>').appendTo($('#message_erreur'));
 
                  console.log('victoire')
             }
             else
             {
 
-              $('<p style="color: red">vous avez perdu<p>').appendTo($('#rangees'));
+              $('<p style="color: red">vous avez perdu<p>').appendTo($('#message_erreur'));
 
             }
 

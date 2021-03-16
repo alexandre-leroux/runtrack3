@@ -24,11 +24,8 @@
 
 
 <div style="width: 850px; height: 500px; border: solid 1px"  id="rangees">
-
-
-
-
 </div>
+<p id="message_erreur"></p>
 
 
 
