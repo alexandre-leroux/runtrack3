@@ -13,8 +13,7 @@
 
 <div  id="images_logo">
 
-    <div ondrop="drop(event)" ondragover="allowDrop(event)"  class="droppable" id="div_1">
-        <!-- <img src="img/1.jpg" alt="" id="1"> -->
+    <div ondrop="drop(event)" ondragover="allowDrop(event)"  class="droppable" id="div_1">      
     </div>
     <div ondrop="drop(event)" ondragover="allowDrop(event)" class="droppable" id="div_2">  <img draggable="true" ondragstart="drag(event)" class="draggable" src="img/2.jpg" alt="" id="2"></div>
     <div ondrop="drop(event)" ondragover="allowDrop(event)" class="droppable" id="div_3">  <img draggable="true" ondragstart="drag(event)" class="draggable" src="img/3.jpg" alt="" id="3"></div>
@@ -34,5 +33,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src='script.js'></script>
+  <!-- <img src="img/1.jpg" alt="" id="1"> -->
   </body>
 </html>
