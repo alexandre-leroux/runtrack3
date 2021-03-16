@@ -34,20 +34,45 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 
   for (i = 1; i<10; i++)
-  {
-    console.log('entre dans le for du drop')
-    let div_vide = $("#div_"+i+" img").length;
+    {
+      console.log('entre dans le for du drop')
+      let div_vide = $("#div_"+i+" img").length;
+    
+      if (div_vide == 1)
+        {
+          let div = $("#div_"+i+"").attr("ondragover",'')
+        }
+      else
+        {
+          $("#div_"+i+"").attr("ondragover","allowDrop(event)")
+        }
+    }
   
-    if (div_vide == 1)
+
+    function isEmpty( el )
       {
-        let div = $("#div_"+i+"").attr("ondragover",'')
-        console.log(div)
+        return !$.trim(el.html())
       }
-    else
-      {
-        $("#div_"+i+"").attr("ondragover","allowDrop(event)")
-      }
-}
+
+      for(x=1; x<10; x++)
+        {
+
+          if (isEmpty($("#div_"+x+""))) {
+            console.log("#div_"+x+" est vide")
+          }
+          if (isEmpty($("#div_1"))) {
+            console.log("#div_1 vide !!!!!!!!!!!!!!!")
+
+            $("#div_2 img").attr("draggable",'true')
+
+          }
+
+        }
+
+
+
+
+
 
 }
 
