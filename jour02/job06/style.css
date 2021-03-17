@@ -1,0 +1,27 @@
+/* *{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(189, 189, 63);
+} */
+
+#page_complete{
+    
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(189, 189, 63); */
+}
+
+
+
+.partie_gauche{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(233, 233, 39);
+    
+}
+.partie_droite{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(177, 231, 233);
+
+}

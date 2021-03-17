@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
@@ -12,7 +13,7 @@
 
 
   <header>
-    <nav>
+    <nav class='teal lighten-2'>
       <a href="index.html">Accueil</a>
       <a href="index.html">Inscription</a>
       <a href="index.html">Connexion</a>
@@ -20,17 +21,23 @@
     </nav>
   </header>
 
-
+  <div class="container">
+    <div class="row">
+    <div class="col s6">
 <form action="">
-  <div>
-    <input type="radio" id="homme" name="homme" value="homme">
-    <label for="homme">Mr</label>
-  </div>
+  <p>
+    <label>
+      <input name="group1" type="radio"  />
+      <span>Mr</span>
+    </label>
+  </p>
   
-  <div>
-    <input type="radio" id="femme" name="femme" value="femme">
-    <label for="femme">Mme</label>
-  </div>
+  <p>
+    <label>
+      <input name="group1" type="radio"  />
+      <span>Mme</span>
+    </p>
+  
   <input type="text" placeholder="Nom">
   <input type="text" placeholder="Prénom">
   <input type="text" placeholder="Adresse">
@@ -53,11 +60,50 @@
 
 </form>
 
+<form action="#">
+  <p>
+    <label>
+      <input type="checkbox" />
+      <span>Red</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" checked="checked" />
+      <span>Yellow</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" class="filled-in" checked="checked" />
+      <span>Filled in</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input id="indeterminate-checkbox" type="checkbox" />
+      <span>Indeterminate Style</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" checked="checked" disabled="disabled" />
+      <span>Green</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" disabled="disabled" />
+      <span>Brown</span>
+    </label>
+  </p>
+</form>
+</div>
+</div>
+</div>
 
-
-
-<footer>
-  <nav>
+<footer >
+  <nav class=' indigo darken-3'>
     <a href="index.html">Accueil</a>
     <a href="index.html">Inscription</a>
     <a href="index.html">Connexion</a>
@@ -75,6 +121,7 @@
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
 </body>
 </html>
