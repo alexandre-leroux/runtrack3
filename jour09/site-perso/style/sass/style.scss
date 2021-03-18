@@ -148,7 +148,7 @@ header{
 
 
 #accueil{
-
+    position: relative;
 width: 100%;
 height: 100vh;
 display: flex;
@@ -217,7 +217,10 @@ flex-direction: column;
         animation-duration: 0.3s;
       }
 
-
+      & .slide {
+        // display: block;
+        position: absolute;
+      }
 }
 
 
