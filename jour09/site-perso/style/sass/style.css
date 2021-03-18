@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
-body {
-  background-color: #793a3a;
-  font-family: "Rajdhani", sans-serif;
-}
-
-header #nav_et_rs, header #div_logo a, header #div_logo {
+header #nav_et_rs #div_reseaux_sociaux, header #nav_et_rs nav a, header #nav_et_rs nav .lien_nav, header #nav_et_rs, header #div_logo a, header #div_logo, header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+body {
+  background-color: #252525;
+  font-family: "Rajdhani", sans-serif;
+  height: 100vh;
+}
+
 header {
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #0e0e0e;
   width: 180px;
   height: 100vh;
@@ -20,14 +23,12 @@ header #div_logo {
   flex-direction: column;
   justify-content: space-around;
   height: 190px;
-  background-color: darkgreen;
 }
 header #div_logo a {
-  margin-top: 10px;
+  margin-top: 15px;
   color: darkgray;
   text-decoration: none;
   flex-direction: column;
-  background-color: #af13b4;
 }
 header #div_logo a img {
   width: 120px;
@@ -41,29 +42,50 @@ header #div_logo p {
   margin-bottom: 10px;
 }
 header #nav_et_rs {
-  height: 100%;
+  height: 82%;
+  width: 100%;
   flex-direction: column;
   justify-content: space-around;
-  background-color: darkmagenta;
 }
 header #nav_et_rs nav {
   width: 100%;
   margin-top: 100px;
 }
-header #nav_et_rs #div_reseaux_sociaux {
-  width: 100%;
-  margin-bottom: 100px;
-  background-color: lightcoral;
-}
-header #nav_et_rs a {
-  color: darkgray;
-  text-decoration: none;
-}
-header #nav_et_rs .lien_nav {
+header #nav_et_rs nav .lien_nav {
   height: 50px;
   width: 100%;
-  border-top: 2px grey;
-  background-color: lemonchiffon;
+  border-top: solid 1px grey;
+}
+header #nav_et_rs nav #dernier_lien {
+  border-bottom: solid 1px grey;
+}
+header #nav_et_rs nav a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: darkgray;
+  transition-duration: 500ms;
+}
+header #nav_et_rs nav a:hover {
+  background-color: mediumblue;
+  transition-duration: 500ms;
+  color: mediumorchid;
+}
+header #nav_et_rs #div_reseaux_sociaux {
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+header #nav_et_rs #div_reseaux_sociaux a img {
+  display: block;
+  height: 25px;
+  width: 25px;
+  transition-duration: 200ms;
+}
+header #nav_et_rs #div_reseaux_sociaux a img:hover {
+  transform: rotate(8deg);
+  transition-duration: 200ms;
 }
 
 /*# sourceMappingURL=style.css.map */
