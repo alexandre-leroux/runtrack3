@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-color:#793a3a ;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+%dflex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    
+    background-color:#0e0e0e ;
+    width: 180px;
+    height: 100vh;
+    color: darkgray;
+    
+    & #div_logo{
+        // height: 100px;
+        @extend %dflex-center; 
+        flex-direction: column;
+        justify-content: space-around;
+        height: 190px;
+
+        background-color: darkgreen;
+        
+        & a{
+            margin-top: 10px;
+            color: darkgray;
+            text-decoration:none; 
+            @extend %dflex-center; 
+            flex-direction: column;
+
+            background-color: rgb(175, 19, 180);
+        }
+
+        & a img{
+            width: 120px;
+        }
+
+        & h1{
+            font-weight:600;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        & p{
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+
+    & #nav_et_rs{
+
+        height: 100%;
+        @extend %dflex-center; 
+        flex-direction: column;
+        justify-content: space-around;
+
+        
+        background-color: darkmagenta;
+
+        & nav{
+            width: 100%;
+            margin-top: 100px;
+        }
+
+        & #div_reseaux_sociaux{
+            width: 100%;
+            margin-bottom: 100px;
+
+
+             background-color: lightcoral;
+        }
+        
+        & a{
+            color: darkgray;
+            text-decoration:none; 
+
+        }
+
+        & .lien_nav{
+            height: 50px;
+            width: 100%;
+            border-top: 2px grey;
+
+
+            background-color: lemonchiffon;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
