@@ -31,24 +31,15 @@ function autoType(elementClass, typingSpeed, time_delai){
   },time_delai);
 }
 
-$(document).ready(function(){
-  // Now to start autoTyping just call the autoType function with the 
-  // class of outer div
-  // The second paramter is the speed between each letter is typed.   
-  autoType(".type-js",40,500);
-});
-$(document).ready(function(){
-    // Now to start autoTyping just call the autoType function with the 
-    // class of outer div
-    // The second paramter is the speed between each letter is typed.   
-    autoType(".type-js2",30,1150);
-  });
-  $(document).ready(function(){
-    // Now to start autoTyping just call the autoType function with the 
-    // class of outer div
-    // The second paramter is the speed between each letter is typed.   
-    autoType(".type-js3",20,2000);
-  });
+
+autoType(".type-js",40,500);
+
+
+autoType(".type-js2",30,1150);
+
+
+autoType(".type-js3",20,2000);
+
 
 
 
