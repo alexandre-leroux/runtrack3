@@ -49,3 +49,26 @@ $(document).ready(function(){
     // The second paramter is the speed between each letter is typed.   
     autoType(".type-js3",20,2000);
   });
+
+
+
+
+
+ function hoverTextAccueil(id)
+    {
+        setTimeout(function(){
+        var letters = $(id).text();
+        console.log(letters)
+        var nHTML = '';
+        for(var letter of letters) {
+        nHTML+="<span class='effet_lettres'>"+letter+"</span>";
+        console.log(nHTML)
+        }
+
+        $(id).html(nHTML);
+    }, 3000);
+    }
+
+hoverTextAccueil("#text_hover1")
+hoverTextAccueil("#text_hover2")
+hoverTextAccueil("#text_hover3")

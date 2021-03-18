@@ -163,6 +163,14 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   animation-duration: 0.3s;
 }
 
+.effet_lettres {
+  transition: 0.2s;
+}
+.effet_lettres:hover {
+  color: #1397EA;
+  font-size: 4.8rem;
+}
+
 #test2 {
   background-color: #c77a15;
   height: 100vh;
