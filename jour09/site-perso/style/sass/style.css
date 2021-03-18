@@ -11,7 +11,13 @@ body {
   height: 100vh;
 }
 
+main {
+  display: flex;
+}
+
 header {
+  position: fixed;
+  z-index: 100;
   flex-direction: column;
   justify-content: space-between;
   background-color: #0e0e0e;
@@ -86,6 +92,73 @@ header #nav_et_rs #div_reseaux_sociaux a img {
 header #nav_et_rs #div_reseaux_sociaux a img:hover {
   transform: rotate(8deg);
   transition-duration: 200ms;
+}
+
+#section_centrale {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 181px;
+  width: calc(100vw - 199px);
+  background-color: mediumseagreen;
+}
+
+.type-js {
+  height: 90vh;
+  background-color: midnightblue;
+}
+
+#test {
+  background-color: mediumvioletred;
+  height: 100vh;
+}
+
+#test2 {
+  background-color: #c77a15;
+  height: 100vh;
+}
+
+.text-js {
+  opacity: 0;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.headline {
+  margin: 20px;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+.headline h1 {
+  letter-spacing: 1.6px;
+  font-weight: 300;
+}
+
+.twitterLink {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px 15px;
+  z-index: 3;
+}
+.twitterLink svg {
+  width: 25px;
+}
+
+.credit {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

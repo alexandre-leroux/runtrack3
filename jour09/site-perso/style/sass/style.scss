@@ -13,9 +13,15 @@ body{
     font-family: 'Rajdhani', sans-serif;
     height: 100vh;
 }
+main{
+    display: flex;
+}
 
 // -----------------------------header
 header{
+
+    position: fixed;
+    z-index: 100;
     @extend %dflex-center; 
     flex-direction: column;
     justify-content: space-between;
@@ -23,7 +29,7 @@ header{
     width: 180px;
     height: 100vh;
     color:$text_color;
-    
+   
     & #div_logo{
         @extend %dflex-center; 
         flex-direction: column;
@@ -122,19 +128,132 @@ header{
         }
   
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 }
+
+
+#section_centrale{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 181px;
+    width: calc(100vw - 199px);
+
+
+    background-color: mediumseagreen;
+}
+.type-js {
+    height: 90vh;
+    background-color: midnightblue;
+}
+#test{
+    background-color: mediumvioletred;
+    height: 100vh;
+}
+#test2{
+    background-color: rgb(199, 122, 21);
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CSS Needed to make it work (Wrote not using SCSS at all copy and paste away)
+// copy and paste into your CSS and the cursor should appear when typing begins
+.text-js{
+    opacity: 0;
+  }
+//   .cursor{
+//     display: block;
+//     position: absolute;
+//     height: 100%;
+//     top: 0;
+//     right: -5px;
+//     width: 2px;
+//     /* Change colour of Cursor Here */
+//     background-color: white;
+//     z-index: 1;
+//     animation: flash 0.5s none infinite alternate;
+//   }
+  @keyframes flash{
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  
+  
+  // Rest of CSS (Purely for this pen)
+
+  // Text Can be styled just like normal
+  .headline{
+    margin: 20px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    h1{
+      letter-spacing: 1.6px;
+      font-weight: 300;
+    }
+  }
+  
+  .twitterLink{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px 15px;
+    z-index: 3;
+    svg{
+      width: 25px;
+    }
+  }
+  
+  .credit{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-decoration: none;
+  }
+
