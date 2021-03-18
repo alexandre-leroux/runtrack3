@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
-header #nav_et_rs #div_reseaux_sociaux, header #nav_et_rs nav a, header #nav_et_rs nav .lien_nav, header #nav_et_rs, header #div_logo a, header #div_logo, header {
+#accueil, header #nav_et_rs #div_reseaux_sociaux, header #nav_et_rs nav a, header #nav_et_rs nav .lien_nav, header #nav_et_rs, header #div_logo a, header #div_logo, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,7 @@ body {
 
 main {
   display: flex;
+  font-family: "Rajdhani", sans-serif;
 }
 
 header {
@@ -20,7 +21,7 @@ header {
   z-index: 100;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #0e0e0e;
+  background-color: #202020;
   width: 180px;
   height: 100vh;
   color: darkgray;
@@ -29,6 +30,8 @@ header #div_logo {
   flex-direction: column;
   justify-content: space-around;
   height: 190px;
+  width: 100%;
+  background-color: black;
 }
 header #div_logo a {
   margin-top: 15px;
@@ -73,9 +76,9 @@ header #nav_et_rs nav a {
   transition-duration: 500ms;
 }
 header #nav_et_rs nav a:hover {
-  background-color: mediumblue;
+  background-color: #2a2a2a;
   transition-duration: 500ms;
-  color: mediumorchid;
+  color: #75aaff;
 }
 header #nav_et_rs #div_reseaux_sociaux {
   justify-content: space-around;
@@ -100,65 +103,69 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   position: relative;
   left: 181px;
   width: calc(100vw - 199px);
-  background-color: mediumseagreen;
 }
 
-.type-js {
-  height: 90vh;
-  background-color: midnightblue;
-}
-
-#test {
-  background-color: mediumvioletred;
+#accueil {
+  width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#accueil .type-js {
+  height: 100px;
+}
+#accueil .type-js2 {
+  height: 100px;
+}
+#accueil .type-js3 {
+  height: 100px;
+}
+#accueil .headline {
+  margin-left: 90px;
+  color: white;
+  font-size: 32px;
+}
+#accueil .headline p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 5rem;
+}
+#accueil .text-js {
+  opacity: 0;
+}
+#accueil #details_dev {
+  margin-left: 90px;
+  margin-top: 40px;
+  color: darkgray;
+  font-size: 1.2rem;
+}
+#accueil #boutton_contact_accueil {
+  margin-left: 90px;
+  margin-top: 40px;
+  height: 50px;
+  width: 150px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.1rem;
+  background-color: #252525;
+  color: #1397EA;
+  border: solid 1px #1397EA;
+  transition: 0.7s;
+}
+#accueil #boutton_contact_accueil:hover {
+  cursor: pointer;
+  background-color: #1397EA;
+  color: white;
+  transition: 0.7s;
+}
+#accueil .animate__animated.animate__fadeInUp {
+  animation-delay: 2.8s;
+  animation-duration: 0.3s;
 }
 
 #test2 {
   background-color: #c77a15;
   height: 100vh;
-}
-
-.text-js {
-  opacity: 0;
-}
-
-@keyframes flash {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.headline {
-  margin: 20px;
-  color: white;
-  font-size: 32px;
-  text-align: center;
-}
-.headline h1 {
-  letter-spacing: 1.6px;
-  font-weight: 300;
-}
-
-.twitterLink {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 10px 15px;
-  z-index: 3;
-}
-.twitterLink svg {
-  width: 25px;
-}
-
-.credit {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

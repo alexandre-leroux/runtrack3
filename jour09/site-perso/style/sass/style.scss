@@ -15,6 +15,7 @@ body{
 }
 main{
     display: flex;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 // -----------------------------header
@@ -25,7 +26,7 @@ header{
     @extend %dflex-center; 
     flex-direction: column;
     justify-content: space-between;
-    background-color:#0e0e0e ;
+    background-color:#202020 ;
     width: 180px;
     height: 100vh;
     color:$text_color;
@@ -35,11 +36,12 @@ header{
         flex-direction: column;
         justify-content: space-around;
         height: 190px;
-        // background-color: darkgreen;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
         
             & a{
                 margin-top: 15px;
-                color: darkgray;
+                color: $text_color;
                 text-decoration:none; 
                 @extend %dflex-center; 
                 flex-direction: column;
@@ -96,9 +98,9 @@ header{
                 // background-color: rgb(161, 42, 42);
     
                 &:hover{
-                    background-color: mediumblue;
+                    background-color: rgb(42, 42, 42);
                     transition-duration: 500ms;
-                    color: mediumorchid;
+                    color: rgb(117, 170, 255);
                 }
             }
         }
@@ -132,6 +134,8 @@ header{
 }
 
 
+// -----------------------------------------------------------accueil---------------
+
 #section_centrale{
     display: flex;
     flex-direction: column;
@@ -139,17 +143,95 @@ header{
     left: 181px;
     width: calc(100vw - 199px);
 
+    // background-color: mediumseagreen;
+}
 
-    background-color: mediumseagreen;
+
+#accueil{
+
+width: 100%;
+height: 100vh;
+display: flex;
+@extend %dflex-center; 
+align-items: flex-start;
+flex-direction: column;
+// background-color: orangered;
+
+    $hauteur_div_auto_text:100px;
+
+    & .type-js {
+        // background-color: midnightblue;
+        height: $hauteur_div_auto_text;
+    }
+    & .type-js2 {
+        // background-color: rgb(35, 112, 25);
+        height: $hauteur_div_auto_text;
+    }
+    & .type-js3 {
+        // background-color: rgb(112, 25, 76);
+        height: $hauteur_div_auto_text;
+    }
+
+    & .headline{
+        margin-left: 90px;
+        color: white;
+        font-size: 32px;
+        p{
+            text-align: left;
+            // font-weight: 700;
+            font-weight: bold;
+            font-size: 5rem;
+        }
+      }
+
+    & .text-js{
+      opacity: 0;
+    }
+    & #details_dev{
+        margin-left: 90px;
+        margin-top: 40px;
+        color: $text_color;
+        font-size: 1.2rem;
+        
+    }
+    & #boutton_contact_accueil{
+        margin-left: 90px;
+        margin-top: 40px;
+        height: 50px;
+        width: 150px;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.1rem;
+        background-color:#252525 ;
+        color: #1397EA;
+        border: solid 1px #1397EA;
+        transition: 0.7s;
+        
+        &:hover{
+            cursor: pointer;
+            background-color:#1397EA ;
+            color: white;
+            transition: 0.7s;
+        }
+    }
+    & .animate__animated.animate__fadeInUp {
+        animation-delay: 2.8s;
+        animation-duration: 0.3s;
+      }
+
+
 }
-.type-js {
-    height: 90vh;
-    background-color: midnightblue;
-}
-#test{
-    background-color: mediumvioletred;
-    height: 100vh;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 #test2{
     background-color: rgb(199, 122, 21);
     height: 100vh;
@@ -195,9 +277,7 @@ header{
 
 // CSS Needed to make it work (Wrote not using SCSS at all copy and paste away)
 // copy and paste into your CSS and the cursor should appear when typing begins
-.text-js{
-    opacity: 0;
-  }
+
 //   .cursor{
 //     display: block;
 //     position: absolute;
@@ -210,14 +290,14 @@ header{
 //     z-index: 1;
 //     animation: flash 0.5s none infinite alternate;
 //   }
-  @keyframes flash{
-    0%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-    }
-  }
+//   @keyframes flash{
+//     0%{
+//       opacity: 1;
+//     }
+//     100%{
+//       opacity: 0;
+//     }
+//   }
   
   
   
@@ -226,34 +306,7 @@ header{
   // Rest of CSS (Purely for this pen)
 
   // Text Can be styled just like normal
-  .headline{
-    margin: 20px;
-    color: white;
-    font-size: 32px;
-    text-align: center;
-    h1{
-      letter-spacing: 1.6px;
-      font-weight: 300;
-    }
-  }
+
   
-  .twitterLink{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 10px 15px;
-    z-index: 3;
-    svg{
-      width: 25px;
-    }
-  }
-  
-  .credit{
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-decoration: none;
-  }
+
 
