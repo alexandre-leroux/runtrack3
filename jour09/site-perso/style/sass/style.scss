@@ -234,10 +234,7 @@ flex-direction: column;
 
 
 
-#test2{
-    background-color: rgb(199, 122, 21);
-    height: 100vh;
-}
+
 
 
 // ---------------------------------------parallax accueil
@@ -364,11 +361,63 @@ flex-direction: column;
   }
   
 
-  
 
 
+#a_propos{
+    @extend %dflex-center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(32, 32, 32);
+    height: 100vh;
+    color: $text_color;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    & img{
+        width: 190px;
+    }
+    & #textes_presentation{
+    @extend %dflex-center;
+    flex-direction: column;
+    justify-content: space-around;
+        height: 45%;
+        width: 45%;
 
+    // background-color: rgb(37, 37, 37);
+    }
+    & #textes_presentation p{
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    & #textes_presentation a{
+        text-decoration:none; 
+    }
+    & .laplateforme a{
+        font-weight: bold;
+        color: #1397EA;
+    }
+    & #lien_cv a{
+        @extend %dflex-center;
+        height: 100%;
+        width: 100%;
+        color: $text_color;
 
+    }
+    & #lien_cv{
+        height: 30px;
+        width: 100px;
+        background-color: transparent;
+        border: solid 1px;
+        transition: 0.5s;
+
+        &:hover{
+            background-color: #075788;
+            border: none;
+            transition: 0.5s;
+
+        }
+    }
+}
 
 
 
