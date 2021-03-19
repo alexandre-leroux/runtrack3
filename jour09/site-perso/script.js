@@ -123,62 +123,33 @@ function redirect(url){
 
 // ----------------------------redirection depuis vignette parallax
 
+function classPourredirection(){
+  $("#para_1").addClass("animate__animated animate__backOutUp");
+  $("#para_2").addClass("animate__animated animate__backOutUp");
+  $("#para_3").addClass("animate__animated animate__backOutDown");
+  $("#para_4").addClass("animate__animated animate__backOutDown");
+  $(".text-js ").addClass("animate__animated animate__backOutLeft");
+  $("#details_dev ").removeClass("animate__animated animate__fadeInUp");
+  $("#details_dev ").addClass("animate__animated animate__backOutLeft");
+  $("#a_propos ").addClass("animate__animated  animate__fadeOut" );
+}
+
 $('#para_1, #premier_boutton'  ).click(function(){
-  $("#para_1").addClass("animate__animated animate__backOutUp");
-  $("#para_2").addClass("animate__animated animate__backOutUp");
-  $("#para_3").addClass("animate__animated animate__backOutDown");
-  $("#para_4").addClass("animate__animated animate__backOutDown");
-  $(".text-js ").addClass("animate__animated animate__backOutLeft");
-  $("#details_dev ").removeClass("animate__animated animate__fadeInUp");
-  $("#details_dev ").addClass("animate__animated animate__backOutLeft");
-  $("#a_propos ").addClass("animate__animated  animate__fadeOut" );
-
-redirect("a-propos.html")
-  
-}
-)
+  classPourredirection();
+  redirect("a-propos.html")
+})
 $('#para_2,#deuxieme_boutton' ).click(function(){
-  $("#para_1").addClass("animate__animated animate__backOutUp");
-  $("#para_2").addClass("animate__animated animate__backOutUp");
-  $("#para_3").addClass("animate__animated animate__backOutDown");
-  $("#para_4").addClass("animate__animated animate__backOutDown");
-  $(".text-js ").addClass("animate__animated animate__backOutLeft");
-  $("#details_dev ").removeClass("animate__animated animate__fadeInUp");
-  $("#details_dev ").addClass("animate__animated animate__backOutLeft");
-  $("#a_propos ").addClass("animate__animated  animate__fadeOut" );
-
-redirect("competences.html")
-  
-}
-)
+  classPourredirection();
+  redirect("competences.html")
+})
 $('#para_3, #troisieme_boutton' ).click(function(){
-  $("#para_1").addClass("animate__animated animate__backOutUp");
-  $("#para_2").addClass("animate__animated animate__backOutUp");
-  $("#para_3").addClass("animate__animated animate__backOutDown");
-  $("#para_4").addClass("animate__animated animate__backOutDown");
-  $(".text-js ").addClass("animate__animated animate__backOutLeft");
-  $("#details_dev ").removeClass("animate__animated animate__fadeInUp");
-  $("#details_dev ").addClass("animate__animated animate__backOutLeft");
-  $("#a_propos ").addClass("animate__animated  animate__fadeOut" );
-
-redirect("portfolio.html")
-  
-}
-)
+  classPourredirection();
+  redirect("portfolio.html")
+})
 $('#para_4, #dernier_boutton' ).click(function(){
-  $("#para_1").addClass("animate__animated animate__backOutUp");
-  $("#para_2").addClass("animate__animated animate__backOutUp");
-  $("#para_3").addClass("animate__animated animate__backOutDown");
-  $("#para_4").addClass("animate__animated animate__backOutDown");
-  $(".text-js ").addClass("animate__animated animate__backOutLeft");
-  $("#details_dev ").removeClass("animate__animated animate__fadeInUp");
-  $("#details_dev ").addClass("animate__animated animate__backOutLeft");
-  $("#a_propos ").addClass("animate__animated  animate__fadeOut" );
-
-redirect("contact.html")
-  
-}
-)
+  classPourredirection();
+  redirect("contact.html")
+})
 
 
 

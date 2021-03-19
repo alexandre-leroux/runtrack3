@@ -16,7 +16,7 @@
     <header>
 
       <div id="div_logo">
-        <a href="index.html"><img src="medias/logo/logo.png" alt="logo alexandre leroux"></a>
+        <a href="index.php"><img src="medias/logo/logo.png" alt="logo alexandre leroux"></a>
         <h1>Alexandre Leroux</h1>
         <p>Développeur web</p>
       </div>
@@ -75,11 +75,7 @@
         
 
 
-
     </section>
-
-
-
 
 
 
