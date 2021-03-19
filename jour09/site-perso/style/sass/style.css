@@ -283,7 +283,6 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
 #a_propos {
   flex-direction: column;
   justify-content: space-around;
-  background-color: #202020;
   height: 100vh;
   color: darkgray;
   padding-top: 10%;
