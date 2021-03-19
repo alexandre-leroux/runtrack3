@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
-#a_propos #lien_cv a, #a_propos #textes_presentation, #a_propos, #container #para_4, #container #para_3, #container #para_2, #container #para_1, #accueil, header #nav_et_rs #div_reseaux_sociaux, header #nav_et_rs nav a, header #nav_et_rs nav .lien_nav, header #nav_et_rs, header #div_logo a, header #div_logo, header {
+#a_propos #lien_cv a, #a_propos #textes_presentation, #a_propos, #container #para_4, #container #para_3, #container #para_2, #container #para_1, #accueil, header #nav_et_rs #div_reseaux_sociaux, header #nav_et_rs nav .lien_nav, header #nav_et_rs, header #div_logo a, header #div_logo, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,20 +65,25 @@ header #nav_et_rs nav .lien_nav {
   width: 100%;
   border-top: solid 1px grey;
 }
-header #nav_et_rs nav #dernier_lien {
+header #nav_et_rs nav #dernier_boutton {
   border-bottom: solid 1px grey;
 }
-header #nav_et_rs nav a {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
+header #nav_et_rs nav button {
+  font-family: "Rajdhani", sans-serif;
+  background-color: transparent;
+  font-size: 1.1rem;
+  text-transform: uppercase;
   color: darkgray;
-  transition-duration: 500ms;
+  border: none;
 }
-header #nav_et_rs nav a:hover {
+header #nav_et_rs nav button:hover {
+  cursor: pointer;
   background-color: #2a2a2a;
   transition-duration: 500ms;
   color: #75aaff;
+}
+header #nav_et_rs nav button:focus {
+  outline: 0;
 }
 header #nav_et_rs #div_reseaux_sociaux {
   justify-content: space-around;

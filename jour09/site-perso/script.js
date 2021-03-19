@@ -123,7 +123,7 @@ function redirect(url){
 
 // ----------------------------redirection depuis vignette parallax
 
-$('#para_1' ).click(function(){
+$('#para_1, #premier_boutton'  ).click(function(){
   $("#para_1").addClass("animate__animated animate__backOutUp");
   $("#para_2").addClass("animate__animated animate__backOutUp");
   $("#para_3").addClass("animate__animated animate__backOutDown");
@@ -131,12 +131,13 @@ $('#para_1' ).click(function(){
   $(".text-js ").addClass("animate__animated animate__backOutLeft");
   $("#details_dev ").removeClass("animate__animated animate__fadeInUp");
   $("#details_dev ").addClass("animate__animated animate__backOutLeft");
+  $("#a_propos ").addClass("animate__animated  animate__fadeOut" );
 
 redirect("a-propos.html")
   
 }
 )
-$('#para_2' ).click(function(){
+$('#para_2,#deuxieme_boutton' ).click(function(){
   $("#para_1").addClass("animate__animated animate__backOutUp");
   $("#para_2").addClass("animate__animated animate__backOutUp");
   $("#para_3").addClass("animate__animated animate__backOutDown");
@@ -144,12 +145,13 @@ $('#para_2' ).click(function(){
   $(".text-js ").addClass("animate__animated animate__backOutLeft");
   $("#details_dev ").removeClass("animate__animated animate__fadeInUp");
   $("#details_dev ").addClass("animate__animated animate__backOutLeft");
+  $("#a_propos ").addClass("animate__animated  animate__fadeOut" );
 
 redirect("competences.html")
   
 }
 )
-$('#para_3' ).click(function(){
+$('#para_3, #troisieme_boutton' ).click(function(){
   $("#para_1").addClass("animate__animated animate__backOutUp");
   $("#para_2").addClass("animate__animated animate__backOutUp");
   $("#para_3").addClass("animate__animated animate__backOutDown");
@@ -157,12 +159,13 @@ $('#para_3' ).click(function(){
   $(".text-js ").addClass("animate__animated animate__backOutLeft");
   $("#details_dev ").removeClass("animate__animated animate__fadeInUp");
   $("#details_dev ").addClass("animate__animated animate__backOutLeft");
+  $("#a_propos ").addClass("animate__animated  animate__fadeOut" );
 
 redirect("portfolio.html")
   
 }
 )
-$('#para_4' ).click(function(){
+$('#para_4, #dernier_boutton' ).click(function(){
   $("#para_1").addClass("animate__animated animate__backOutUp");
   $("#para_2").addClass("animate__animated animate__backOutUp");
   $("#para_3").addClass("animate__animated animate__backOutDown");
@@ -170,6 +173,7 @@ $('#para_4' ).click(function(){
   $(".text-js ").addClass("animate__animated animate__backOutLeft");
   $("#details_dev ").removeClass("animate__animated animate__fadeInUp");
   $("#details_dev ").addClass("animate__animated animate__backOutLeft");
+  $("#a_propos ").addClass("animate__animated  animate__fadeOut" );
 
 redirect("contact.html")
   
