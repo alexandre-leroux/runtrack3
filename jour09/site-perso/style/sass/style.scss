@@ -240,7 +240,7 @@ flex-direction: column;
 }
 
 
-
+// ---------------------------------------parallax accueil
 #container{
     position: absolute;
     height: 100vh;
@@ -252,6 +252,7 @@ flex-direction: column;
     
 
     &   #para_1{
+        @extend %dflex-center; 
         position: absolute;
         left: 60%;
         top: 20%;
@@ -259,8 +260,27 @@ flex-direction: column;
         width: 250px;
         background-color: brown;
         box-shadow: 7px 7px 20px rgb(15, 15, 15);
-        animation-delay: 2.9s;
-        animation-duration: 0.3s;
+      
+
+        & img{
+            opacity: 0;
+            transition: 1s;
+        }
+        & p{
+            // display: inline-block;
+            position: absolute !important;
+            transition: 1s;
+            top: 0%;
+        }
+        &:hover>img{
+            opacity: 1;
+            transition: 1s;
+        }
+        &:hover>p{
+            opacity: 0;
+            transition: 1s;
+        }
+
       }
     &   #para_2{
         position: absolute;
@@ -270,8 +290,7 @@ flex-direction: column;
         width: 200px;
         background-color: rgb(142, 165, 42);
         box-shadow: 5px 5px 15px rgb(15, 15, 15);
-        animation-delay: 2.8s;
-        animation-duration: 0.5s;
+
       }
     &   #para_3{
         position: absolute;
@@ -279,24 +298,22 @@ flex-direction: column;
         top: 75%;
         height: 190px;
         width: 280px;
-        background-color: rgb(165, 42, 149);
+        background-color: rgb(69, 51, 78);
         box-shadow: 8px 8px 30px rgb(15, 15, 15);
-        animation-delay: 3.1s;
-        animation-duration: 0.3s;
       }
     &   #para_4{
-        position: absolute !important;
-        left: 60%!important;
-        top: 70%!important;
-        height: 200px!important;
-        width: 350px!important;
-        background-color: rgb(42, 44, 165)!important;
-        box-shadow: 10px 10px 35px rgb(15, 15, 15)!important;
-        // animation-duration: 0.3s;
-        
-
-
-       
+        position: absolute ;
+        left: 60%;
+        top: 70%;
+        height: 200px;
+        width: 350px;
+        background-color: rgb(49, 49, 59);
+        box-shadow: 10px 10px 30px rgb(15, 15, 15);
+        &:hover{
+            // background-color: rgb(0, 0, 0);
+            opacity: 0 !important;;
+            
+        }
 
       }
 
@@ -310,7 +327,7 @@ flex-direction: column;
 
     }
      & .load {
-        opacity: 1  !important;
+        opacity: 1 !important;
     }
 
   }

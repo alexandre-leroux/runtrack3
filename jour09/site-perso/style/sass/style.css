@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
-#accueil, header #nav_et_rs #div_reseaux_sociaux, header #nav_et_rs nav a, header #nav_et_rs nav .lien_nav, header #nav_et_rs, header #div_logo a, header #div_logo, header {
+#container #para_1, #accueil, header #nav_et_rs #div_reseaux_sociaux, header #nav_et_rs nav a, header #nav_et_rs nav .lien_nav, header #nav_et_rs, header #div_logo a, header #div_logo, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,8 +193,23 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   width: 250px;
   background-color: brown;
   box-shadow: 7px 7px 20px #0f0f0f;
-  animation-delay: 2.9s;
-  animation-duration: 0.3s;
+}
+#container #para_1 img {
+  opacity: 0;
+  transition: 1s;
+}
+#container #para_1 p {
+  position: absolute !important;
+  transition: 1s;
+  top: 0%;
+}
+#container #para_1:hover > img {
+  opacity: 1;
+  transition: 1s;
+}
+#container #para_1:hover > p {
+  opacity: 0;
+  transition: 1s;
 }
 #container #para_2 {
   position: absolute;
@@ -204,8 +219,6 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   width: 200px;
   background-color: #8ea52a;
   box-shadow: 5px 5px 15px #0f0f0f;
-  animation-delay: 2.8s;
-  animation-duration: 0.5s;
 }
 #container #para_3 {
   position: absolute;
@@ -213,19 +226,20 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   top: 75%;
   height: 190px;
   width: 280px;
-  background-color: #a52a95;
+  background-color: #45334e;
   box-shadow: 8px 8px 30px #0f0f0f;
-  animation-delay: 3.1s;
-  animation-duration: 0.3s;
 }
 #container #para_4 {
-  position: absolute !important;
-  left: 60% !important;
-  top: 70% !important;
-  height: 200px !important;
-  width: 350px !important;
-  background-color: #2a2ca5 !important;
-  box-shadow: 10px 10px 35px #0f0f0f !important;
+  position: absolute;
+  left: 60%;
+  top: 70%;
+  height: 200px;
+  width: 350px;
+  background-color: #31313b;
+  box-shadow: 10px 10px 30px #0f0f0f;
+}
+#container #para_4:hover {
+  opacity: 0 !important;
 }
 #container #para_1, #container #para_2, #container #para_3, #container #para_4 {
   opacity: 0;
