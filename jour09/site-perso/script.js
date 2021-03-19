@@ -1,4 +1,4 @@
-
+// ---------------------------------------------------ecriture auto accueil
 // var time_delai = 1500
 function autoType(elementClass, typingSpeed, time_delai){
   var thhis = $(elementClass);
@@ -30,21 +30,14 @@ function autoType(elementClass, typingSpeed, time_delai){
 
   },time_delai);
 }
-
-
 autoType(".type-js",40,500);
-
-
 autoType(".type-js2",30,1150);
-
-
 autoType(".type-js3",20,2000);
 
 
 
 
-
-
+// -------------------------------------effet hover sur lettres
  function hoverTextAccueil(id)
     {
         setTimeout(function(){
@@ -63,3 +56,47 @@ autoType(".type-js3",20,2000);
 hoverTextAccueil("#text_hover1")
 hoverTextAccueil("#text_hover2")
 hoverTextAccueil("#text_hover3")
+
+
+
+
+// -------------------------------------------parralax
+
+var timeout;
+$('#container').mousemove(function(e){
+  if(timeout) clearTimeout(timeout);
+  setTimeout(callParallax.bind(null, e),0);
+  
+});
+
+function callParallax(e){
+  parallaxIt(e, '#para_1', -50);
+  parallaxIt(e, '#para_2', -30);
+  parallaxIt(e, '#para_3', -70);
+  parallaxIt(e, '#para_4', -130);
+  parallaxIt(e, '.text-js', -20);
+  // parallaxIt(e, '#img_para_2', -20);
+
+}
+
+function parallaxIt(e, target, movement){
+  var $this = $('#container');
+  var relX = e.pageX - $this.offset().left;
+  var relY = e.pageY - $this.offset().top;
+  
+  TweenMax.to(target, 1, {
+    x: (relX - $this.width()/2) / $this.width() * movement,
+    y: (relY - $this.height()/2) / $this.height() * movement,
+    ease: Power2.easeOut
+  })
+}
+
+
+
+// ----------------------delai apparition div parralax
+$(setTimeout(function() {
+  $("#para_1").addClass("load");
+  $("#para_2").addClass("load");
+  $("#para_3").addClass("load");
+  $("#para_4").addClass("load")
+},3100));
