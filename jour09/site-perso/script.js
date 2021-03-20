@@ -153,34 +153,31 @@ $('#para_4, #dernier_boutton' ).click(function(){
 })
 
 
+
+
+
+
+// -----------------------------------------actions sur vignette rojet voyage
  $("#projets_image-3").click(function(){
 
 
   window.open('http://stackoverflow.com/', '_blank')
 })
 
-
-
-
  $("#projets_image-3 img, p").mouseenter(function(){
 
-  $("#projets_image-3 img").css({"transform": "scale(1.1)",
-               "transition": "0.6s" });
+  $("#projets_image-3 img").css({
+    "transform": "scale(1.1)",
+    "transition": "0.6s" });
               
               
-   $("#projets_image-3 p").css({  "z-index": "10",
-   "opacity": "1",
-                                  "transform": "scale(1.1)",
-                                  "transition": "0.6s" 
-                                   });      
+   $("#projets_image-3 p").css({
+    "z-index": "10",
+    "opacity": "1",
+    "transform": "scale(1.1)",
+    "transition": "0.6s"});      
               
-              })
-
-
-
-
-
-
+})
 
 
 $("#projets_image-3 img, p").mouseleave(function(){
