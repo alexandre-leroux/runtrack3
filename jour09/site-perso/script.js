@@ -42,7 +42,6 @@ autoType(".type-js3",20,2000);
     {
         setTimeout(function(){
         var letters = $(id).text();
-        console.log(letters)
         var nHTML = '';
         for(var letter of letters) {
         nHTML+="<span class='effet_lettres'>"+letter+"</span>";
@@ -107,7 +106,7 @@ function redirect(url){
   $.ajax({
     url: "pages/"+url+"",
     type: "POST",
-    dataType: "text",
+    dataType: "html",
   
     success : function(data){
       var delayTime = 800 
@@ -131,7 +130,9 @@ function classPourredirection(){
   $(".text-js ").addClass("animate__animated animate__backOutLeft");
   $("#details_dev ").removeClass("animate__animated animate__fadeInUp");
   $("#details_dev ").addClass("animate__animated animate__backOutLeft");
+
   $("#a_propos ").addClass("animate__animated  animate__fadeOut" );
+  $("#conteneur_competences ").addClass("animate__animated  animate__fadeOut" );
 }
 
 $('#para_1, #premier_boutton'  ).click(function(){
