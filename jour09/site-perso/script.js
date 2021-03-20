@@ -153,7 +153,36 @@ $('#para_4, #dernier_boutton' ).click(function(){
 })
 
 
+ $("#projets_image-3").click(function(){
 
+
+  window.open('http://stackoverflow.com/', '_blank')
+})
+
+
+
+
+ $("#projets_image-3 img").mouseenter(function(){
+
+  $(this).css({"transform": "scale(1.1)",
+               "transition": "0.6s" });
+              
+              
+   $("#projets_image-3 h1").css({"transform": "scale(1.1)",
+   "transition": "0.6s" });      
+              
+              })
+
+$("#projets_image-3 img").mouseleave(function(){
+
+  $(this).css({"transform": "scale(1)",
+               "transition": "0.6s" });
+              
+  $("#projets_image-3 h1").css({  "transform": "scale(1)",
+                                  "transition": "0.6s",
+                                  "z-index": "10" }); 
+              
+})
 
 
 

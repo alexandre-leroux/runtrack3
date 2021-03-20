@@ -397,15 +397,14 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   margin-bottom: 100px;
   background-color: #3a2914;
 }
-.parallax .images_projets {
-  width: 600px;
-}
 .parallax .parallax__layer {
   position: absolute;
+  z-index: -100;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  width: 600px;
 }
 
 .parallax__layer--base {
@@ -427,15 +426,22 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
 }
 
 #projets_image-1 {
-  transform: translate(800px, 500px);
+  transform: translate(65vw, 45vh);
 }
 
 #projets_image-2 {
-  transform: translate(200px, 50px);
+  transform: translate(10vw, 20vh);
 }
 
 #projets_image-3 {
-  transform: translate(1000px, -10px);
+  height: 150px;
+  transform: translate(55vw, -5vh);
+  transition: 0.6s;
+}
+#projets_image-3 h1 {
+  margin: 0;
+  position: relative;
+  top: 70px;
 }
 
 /*# sourceMappingURL=style.css.map */

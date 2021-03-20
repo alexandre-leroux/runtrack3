@@ -569,24 +569,34 @@ flex-direction: column;
         background-color: rgb(58, 41, 20);
     }
     & .images_projets{
-        width: 600px;
+        // width: 600px;
+        // display: block;
+        // z-index: 10;
+        // &:hover{
+        //     transform: scale(2);
+        // }
     }
 
     & .parallax__layer {
         position: absolute;
+        z-index: -100;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
+        width: 600px;
+  
       }
 
   }
 
   .parallax__layer--base {
     transform: translateZ(0);
+
   }
   .parallax__layer--back {
     transform: translateZ(-0.5px);
+
   }
   .parallax__layer--back2 {
     transform: translateZ(-1px);
@@ -600,17 +610,46 @@ flex-direction: column;
 
 
 #projets_image-1{
-    transform: translate(800px, 500px);
+    transform: translate(65vw, 45vh);
+
+
 }
+
 #projets_image-2{
-    transform: translate(200px, 50px);
+    transform: translate(10vw, 20vh);
+
+
+
 }
-#projets_image-3{
-    transform: translate(1000px, -10px);
+
+
+
+#projets_image-3 {
+    height: 150px;
+    transform: translate(55vw, -5vh);
+    transition: 0.6s;
+
+    // & img{
+    //     filter: blur(0px);
+
+    //     &:hover{
+    //         opacity: 0.5;
+    //         transform: scale(1.1);
+    //         transition: 0.6s;
+    //         cursor: pointer;
+    //         filter: blur(5px);
+    //     }
+    //     &:hover + h1{
+    //         font-size: 7rem;
+    //     }
+    // }
+
+    & h1{
+        margin: 0;
+        position: relative;
+        top: 70px;
+    }
+
 }
-//   .parallax {
-//     perspective-origin-x: 100%;
-//   }
-//   .parallax__layer {
-//     transform-origin-x: 100%;
-//   }
+
+
