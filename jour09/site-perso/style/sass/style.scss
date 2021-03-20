@@ -644,10 +644,15 @@ flex-direction: column;
     //     }
     // }
 
-    & h1{
+    & p{
+        opacity: 0;
         margin: 0;
+        font-size: 6rem;
+        font-weight: 700;
+        color: $text_color;
+        text-align: center;
         position: relative;
-        top: 70px;
+        top: 225px;
     }
 
 }

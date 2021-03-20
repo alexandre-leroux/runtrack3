@@ -438,10 +438,15 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   transform: translate(55vw, -5vh);
   transition: 0.6s;
 }
-#projets_image-3 h1 {
+#projets_image-3 p {
+  opacity: 0;
   margin: 0;
+  font-size: 6rem;
+  font-weight: 700;
+  color: darkgray;
+  text-align: center;
   position: relative;
-  top: 70px;
+  top: 225px;
 }
 
 /*# sourceMappingURL=style.css.map */

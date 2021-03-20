@@ -162,23 +162,34 @@ $('#para_4, #dernier_boutton' ).click(function(){
 
 
 
- $("#projets_image-3 img").mouseenter(function(){
+ $("#projets_image-3 img, p").mouseenter(function(){
 
-  $(this).css({"transform": "scale(1.1)",
+  $("#projets_image-3 img").css({"transform": "scale(1.1)",
                "transition": "0.6s" });
               
               
-   $("#projets_image-3 h1").css({"transform": "scale(1.1)",
-   "transition": "0.6s" });      
+   $("#projets_image-3 p").css({  "z-index": "10",
+   "opacity": "1",
+                                  "transform": "scale(1.1)",
+                                  "transition": "0.6s" 
+                                   });      
               
               })
 
-$("#projets_image-3 img").mouseleave(function(){
 
-  $(this).css({"transform": "scale(1)",
+
+
+
+
+
+
+$("#projets_image-3 img, p").mouseleave(function(){
+
+  $("#projets_image-3 img").css({"transform": "scale(1)",
                "transition": "0.6s" });
               
-  $("#projets_image-3 h1").css({  "transform": "scale(1)",
+  $("#projets_image-3 p").css({  "opacity": "0",
+                                  "transform": "scale(1)",
                                   "transition": "0.6s",
                                   "z-index": "10" }); 
               
