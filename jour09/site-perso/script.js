@@ -168,7 +168,3 @@ $('#para_4, #dernier_boutton' ).click(function(){
 
 
 
-
-
-
-
