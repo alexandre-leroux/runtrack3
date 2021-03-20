@@ -344,7 +344,6 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   width: 60%;
   height: 60%;
   border-radius: 30px;
-  background-color: #2e2e2e;
 }
 #conteneur_competences #conteneur_competences_section_centrale #logo_languages {
   height: 200px;
@@ -359,10 +358,11 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
 #conteneur_competences #conteneur_competences_section_centrale #conteneur_textes_competences {
   width: 100%;
   height: 60%;
-  background-color: #313131;
+  background-color: #141414;
   flex-direction: column;
   justify-content: space-around;
   color: darkgray;
+  animation-duration: 0.8s;
 }
 #conteneur_competences #conteneur_competences_section_centrale #conteneur_textes_competences h1 {
   text-align: center;
