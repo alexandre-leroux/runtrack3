@@ -400,7 +400,6 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
 #conteneur_portfolio #display_portfolio {
   align-items: flex-start;
   flex-wrap: wrap;
-  min-height: 100vh;
   width: 1200px;
   background-color: goldenrod;
 }
@@ -410,7 +409,7 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
 #conteneur_portfolio #display_portfolio #projet_1 {
   background-color: green;
   font-size: 0;
-  height: 100px;
+  height: 300px;
   margin: 10px;
 }
 #conteneur_portfolio #display_portfolio #projet_1 #titre_projet_1 {
@@ -434,7 +433,7 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
 #conteneur_portfolio #display_portfolio #projet_2 {
   background-color: #002980;
   font-size: 0;
-  height: 100px;
+  height: 300px;
   margin: 10px;
 }
 #conteneur_portfolio #display_portfolio #projet_2 #titre_projet_2 {
@@ -453,6 +452,30 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   top: 170px;
 }
 #conteneur_portfolio #display_portfolio #projet_2 img {
+  border-radius: 20px;
+}
+#conteneur_portfolio #display_portfolio #projet_3 {
+  background-color: #800064;
+  font-size: 0;
+  height: 300px;
+  margin: 10px;
+}
+#conteneur_portfolio #display_portfolio #projet_3 #titre_projet_3 {
+  font-size: 3rem;
+  color: darkgray;
+}
+#conteneur_portfolio #display_portfolio #projet_3 #despcription_porjet_3 {
+  font-size: 2rem;
+  color: darkgray;
+}
+#conteneur_portfolio #display_portfolio #projet_3 p {
+  opacity: 0;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  top: 170px;
+}
+#conteneur_portfolio #display_portfolio #projet_3 img {
   border-radius: 20px;
 }
 
