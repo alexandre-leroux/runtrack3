@@ -337,6 +337,7 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   justify-content: space-around;
   height: 45%;
   width: 45%;
+  background-color: #252525;
 }
 #a_propos #textes_presentation p {
   text-align: center;
@@ -368,6 +369,11 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 1400px) {
+  #textes_presentation {
+    width: 80% !important;
+  }
+}
 #conteneur_competences {
   overflow: hidden;
   width: 100%;
