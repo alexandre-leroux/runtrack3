@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
-#conteneur_competences #conteneur_competences_section_centrale #conteneur_textes_competences, #conteneur_competences #conteneur_competences_section_centrale #logo_languages, #conteneur_competences, #a_propos #lien_cv a, #a_propos #textes_presentation, #a_propos, #container #para_4, #container #para_3, #container #para_2, #container #para_1, #accueil, header #nav_et_rs #div_reseaux_sociaux, header #nav_et_rs nav .lien_nav, header #nav_et_rs, header #div_logo a, header #div_logo, header {
+#conteneur_portfolio #display_portfolio, #conteneur_portfolio, #conteneur_competences #conteneur_competences_section_centrale #conteneur_textes_competences, #conteneur_competences #conteneur_competences_section_centrale #logo_languages, #conteneur_competences, #a_propos #lien_cv a, #a_propos #textes_presentation, #a_propos, #container #para_4, #container #para_3, #container #para_2, #container #para_1, #accueil, header #nav_et_rs #div_reseaux_sociaux, header #nav_et_rs nav .lien_nav, header #nav_et_rs, header #div_logo a, header #div_logo, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,108 +383,15 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   font-size: 1.2rem;
 }
 
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+#conteneur_portfolio {
+  background-color: aqua;
 }
-.parallax h1 {
-  text-align: center;
-  color: darkgray;
-  font-size: 3rem;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  background-color: #3a2914;
+#conteneur_portfolio #display_portfolio {
+  width: 60vw;
+  background-color: goldenrod;
 }
-.parallax .parallax__layer {
-  position: absolute;
-  z-index: -100;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 600px;
-}
-
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-
-.parallax__layer--back {
-  transform: translateZ(-0.5px);
-}
-
-.parallax__layer--back2 {
-  transform: translateZ(-1px);
-}
-
-.parallax__group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-
-#projets_image-1 {
-  transform: translate(65vw, 45vh);
-}
-
-#projets_image-3 {
-  height: 150px;
-  transform: translate(55vw, -5vh);
-  transition: 0.6s;
-  border-radius: 80px;
-}
-#projets_image-3 img {
-  opacity: 0.5;
-  border-radius: 80px;
-}
-#projets_image-3 #titre_projet_3 {
-  opacity: 0;
-  margin: 0;
-  font-size: 6rem;
-  font-weight: 700;
-  color: darkgray;
-  text-align: center;
-  position: relative;
-  top: 225px;
-}
-#projets_image-3 #details_du_projet_3 {
-  opacity: 0;
-  font-size: 2rem;
-  color: darkgray;
-  position: relative;
-  text-align: center;
-  top: 225px;
-}
-
-#projets_image-2 {
-  height: 260px;
-  margin-left: 8vw;
-  transition: 0.6s;
-  border-radius: 80px;
-}
-#projets_image-2 img {
-  opacity: 0.5;
-  border-radius: 80px;
-}
-#projets_image-2 #titre_projet_2 {
-  margin: 0;
-  font-size: 4rem;
-  font-weight: 700;
-  color: darkgray;
-  text-align: center;
-  position: relative;
-  top: 190px;
-  left: 190px;
-}
-#projets_image-2 #details_du_projet_2 {
-  font-size: 2rem;
-  color: darkgray;
-  text-align: center;
-  position: relative;
-  top: 190px;
-  left: 190px;
+#conteneur_portfolio #display_portfolio #projet_1 {
+  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */
