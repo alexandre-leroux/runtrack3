@@ -136,46 +136,62 @@ function classPourredirection(){
   $("#conteneur_portfolio ").addClass("animate__animated  animate__zoomOut" );
 }
 
-$('#para_1, #premier_boutton'  ).click(function(){
+
+$("#section_centrale, header").on('click','#para_1, #premier_boutton', function(){
+
   classPourredirection();
   redirect("a-propos.html")
-})
-$('#para_2,#deuxieme_boutton' ).click(function(){
+
+}  )
+
+$("#section_centrale, header").on('click','#para_2, #deuxieme_boutton', function(){
+
   classPourredirection();
   redirect("competences.html")
-})
-$('#para_3, #troisieme_boutton' ).click(function(){
+
+}  )
+
+$("#section_centrale, header").on('click','#para_3, #troisieme_boutton', function(){
+
   classPourredirection();
   redirect("portfolio.html")
-})
-$('#para_4, #dernier_boutton' ).click(function(){
+
+}  )
+
+$("#section_centrale, header").on('click','#para_4, #dernier_boutton', function(){
+
   classPourredirection();
   redirect("contact.html")
-})
+
+}  )
 
 
 
+// -------------------------------------------------------------------------actions lien sur vignettes projets
 
+$("#section_centrale").on('click','#image_projet_1, #titre_projet_1, #despcription_porjet_1', function(e){
 
-
-
-
-// -------------------------------------------------------------------------actions sur vignette projet
-
- $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").click(function(){
   window.open('http://stackoverflow.com/', '_blank')
-})
- $("#image_projet_2, #titre_projet_2, #despcription_porjet_2").click(function(){
+
+}  )
+$("#section_centrale").on('click','#image_projet_2, #titre_projet_2, #despcription_porjet_2', function(e){
+
   window.open('http://stackoverflow.com/', '_blank')
-})
- $("#image_projet_3, #titre_projet_3, #despcription_porjet_3").click(function(){
+
+}  )
+$("#section_centrale").on('click','#image_projet_3, #titre_projet_3, #despcription_porjet_3', function(e){
+
   window.open('http://stackoverflow.com/', '_blank')
-})
- $("#image_projet_4, #titre_projet_4, #despcription_porjet_4").click(function(){
+
+}  )
+$("#section_centrale").on('click','#image_projet_4, #titre_projet_4, #despcription_porjet_4', function(e){
+
   window.open('http://stackoverflow.com/', '_blank')
-})
+
+}  )
 
 
+// ------------------------------------------------------fontions sur hover vignettes projets
 function change_css_hover_mouseenter(id_image,id_div ){
 
   $(id_image).css({
@@ -209,58 +225,65 @@ function change_css_hover_mouseleave(id_image,id_div ){
 
 }
 
+
 // ----------------projet 1
- $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseenter(function(){
+$("#section_centrale").on('mouseenter','#image_projet_1, #titre_projet_1, #despcription_porjet_1', function(e){
 
   change_css_hover_mouseenter("#image_projet_1","#projet_1" )
-              
-})
 
-$("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseleave(function(){
+}  )
+$("#section_centrale").on('mouseleave','#image_projet_1, #titre_projet_1, #despcription_porjet_1', function(e){
 
   change_css_hover_mouseleave("#image_projet_1","#projet_1" )
-})
+
+}  )
+
 
 // ----------------projet 2
-$("#image_projet_2, #titre_projet_2, #despcription_porjet_2").mouseenter(function(){
 
- change_css_hover_mouseenter("#image_projet_2","#projet_2" )
-             
-})
 
-$("#image_projet_2, #titre_projet_2, #despcription_porjet_2").mouseleave(function(){
+$("#section_centrale").on('mouseenter','#image_projet_2, #titre_projet_2, #despcription_porjet_2', function(e){
 
- change_css_hover_mouseleave("#image_projet_2","#projet_2" )
-})
+  change_css_hover_mouseenter("#image_projet_2","#projet_2" )
+
+}  )
+
+
+$("#section_centrale").on('mouseleave','#image_projet_2, #titre_projet_2, #despcription_porjet_2', function(e){
+
+  change_css_hover_mouseleave("#image_projet_2","#projet_2" )
+
+}  )
+
 
 // ----------------projet 3
-$("#image_projet_3, #titre_projet_3, #despcription_porjet_3").mouseenter(function(){
 
- change_css_hover_mouseenter("#image_projet_3","#projet_3" )
-             
-})
+$("#section_centrale").on('mouseenter','#image_projet_3, #titre_projet_3, #despcription_porjet_3', function(e){
 
-$("#image_projet_3, #titre_projet_3, #despcription_porjet_3").mouseleave(function(){
+  change_css_hover_mouseenter("#image_projet_3","#projet_3" )
 
- change_css_hover_mouseleave("#image_projet_3","#projet_3" )
-})
+}  )
+
+$("#section_centrale").on('mouseleave','#image_projet_3, #titre_projet_3, #despcription_porjet_3', function(e){
+
+  change_css_hover_mouseleave("#image_projet_3","#projet_3" )
+
+}  )
 
 
 // ----------------projet 4
-$("#image_projet_4, #titre_projet_4, #despcription_porjet_4").mouseenter(function(){
 
- change_css_hover_mouseenter("#image_projet_4","#projet_4" )
-             
-})
+$("#section_centrale").on('mouseenter','#image_projet_4, #titre_projet_4, #despcription_porjet_4', function(e){
 
-$("#image_projet_4, #titre_projet_4, #despcription_porjet_4").mouseleave(function(){
+  change_css_hover_mouseenter("#image_projet_4","#projet_4" )
 
- change_css_hover_mouseleave("#image_projet_4","#projet_4" )
-})
+}  )
 
+$("#section_centrale").on('mouseleave','#image_projet_4, #titre_projet_4, #despcription_porjet_4', function(e){
 
+  change_css_hover_mouseleave("#image_projet_4","#projet_4" )
 
-
+}  )
 
 
 
@@ -270,20 +293,5 @@ $("#image_projet_4, #titre_projet_4, #despcription_porjet_4").mouseleave(functio
 
 
 
-//  $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseenter(function(){
 
-//   $("#image_projet_1").css({
-//     "filter": "blur(8px)",
-//     "transform": "scale(1.1)",
-//     "transition": "0.4s",
-//     "cursor": "pointer"});
-              
-              
-//    $("#projet_1 p").css({
-//     "z-index": "10",
-//     "opacity": "1",
-//     "transform": "scale(1.1)",
-//     "transition": "0.4s",
-//     "cursor": "pointer"});      
-              
-// })
+
