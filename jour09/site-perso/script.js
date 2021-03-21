@@ -198,9 +198,10 @@ $("#projets_image-3 img,  #titre_projet_3, #details_du_projet_3").mouseleave(fun
 
 // -----------------------------------------actions sur vignette projet app fav
  $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").click(function(){
-
   window.open('http://stackoverflow.com/', '_blank')
-
+})
+ $("#image_projet_2, #titre_projet_12, #despcription_porjet_2").click(function(){
+  window.open('http://stackoverflow.com/', '_blank')
 })
 
  $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseenter(function(){
@@ -221,7 +222,6 @@ $("#projets_image-3 img,  #titre_projet_3, #details_du_projet_3").mouseleave(fun
               
 })
 
-
 $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseleave(function(){
 
   $("#image_projet_1").css({
@@ -230,6 +230,40 @@ $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseleave(functio
     "transition": "0.4s" });
               
   $("#projet_1 p").css({  
+    "opacity": "0",
+    "transform": "scale(1)",
+    "transition": "0.4s",
+    "z-index": "10" }); 
+              
+})
+
+
+ $("#image_projet_2, #titre_projet_2, #despcription_porjet_2").mouseenter(function(){
+
+  $("#image_projet_2").css({
+    "filter": "blur(8px)",
+    "transform": "scale(1.1)",
+    "transition": "0.4s",
+    "cursor": "pointer"});
+              
+              
+   $("#projet_2 p").css({
+    "z-index": "10",
+    "opacity": "1",
+    "transform": "scale(1.1)",
+    "transition": "0.4s",
+    "cursor": "pointer"});      
+              
+})
+
+$("#image_projet_2, #titre_projet_2, #despcription_porjet_2").mouseleave(function(){
+
+  $("#image_projet_2").css({
+    "filter": "blur(0px)",
+    "transform": "scale(1)",
+    "transition": "0.4s" });
+              
+  $("#projet_2 p").css({  
     "opacity": "0",
     "transform": "scale(1)",
     "transition": "0.4s",
