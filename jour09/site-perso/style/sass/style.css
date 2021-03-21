@@ -386,7 +386,6 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
 #conteneur_portfolio {
   flex-direction: column;
   justify-content: start;
-  background-color: aqua;
   min-height: 100vh;
 }
 #conteneur_portfolio h1 {
@@ -394,20 +393,18 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   color: darkgray;
   font-size: 3rem;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 #conteneur_portfolio #display_portfolio {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 1200px;
-  background-color: goldenrod;
 }
 #conteneur_portfolio #display_portfolio img {
   width: 500px;
 }
 #conteneur_portfolio #display_portfolio #projet_1 {
-  background-color: green;
   font-size: 0;
   height: 300px;
   margin: 10px;
@@ -431,7 +428,6 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   border-radius: 20px;
 }
 #conteneur_portfolio #display_portfolio #projet_2 {
-  background-color: #002980;
   font-size: 0;
   height: 300px;
   margin: 10px;
@@ -455,7 +451,6 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   border-radius: 20px;
 }
 #conteneur_portfolio #display_portfolio #projet_3 {
-  background-color: #800064;
   font-size: 0;
   height: 300px;
   margin: 10px;
@@ -479,7 +474,6 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   border-radius: 20px;
 }
 #conteneur_portfolio #display_portfolio #projet_4 {
-  background-color: #800064;
   font-size: 0;
   height: 300px;
   margin: 10px;

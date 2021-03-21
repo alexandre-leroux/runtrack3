@@ -133,6 +133,7 @@ function classPourredirection(){
 
   $("#a_propos ").addClass("animate__animated  animate__fadeOut" );
   $("#conteneur_competences ").addClass("animate__animated  animate__fadeOut" );
+  $("#conteneur_portfolio ").addClass("animate__animated  animate__zoomOut" );
 }
 
 $('#para_1, #premier_boutton'  ).click(function(){
