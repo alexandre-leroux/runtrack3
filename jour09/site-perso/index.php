@@ -30,9 +30,9 @@
         </nav>
 
         <div id="div_reseaux_sociaux">
-          <a href=""><img src="medias/rs/031-linkedin.png" alt="logo linkedin"></a>
-          <a href=""><img src="medias/rs/039-github.png" alt="logo github"></a>
-          <a href=""><img src="medias/rs/022-skype.png" alt="logo skype"></a>
+          <a href="https://fr.linkedin.com/in/alexandre-leroux-2023311a3"><img src="medias/rs/031-linkedin.png" alt="logo linkedin"></a>
+          <a href="https://github.com/alexandre-leroux"><img src="medias/rs/039-github.png" alt="logo github"></a>
+          <!-- <a href=""><img src="medias/rs/022-skype.png" alt="logo skype"></a> -->
         </div>
       </div>
 
