@@ -189,6 +189,7 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 15px;
 }
 #container #para_1 {
   position: absolute;
@@ -337,6 +338,7 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   justify-content: space-around;
   height: 45%;
   width: 45%;
+  padding: 15px;
   background-color: #252525;
 }
 #a_propos #textes_presentation p {

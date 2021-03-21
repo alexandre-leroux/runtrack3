@@ -258,6 +258,7 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 15px;
 
     &   #para_1{
         @extend %dflex-center; 
@@ -423,8 +424,9 @@ flex-direction: column;
     @extend %dflex-center;
     flex-direction: column;
     justify-content: space-around;
-        height: 45%;
-        width: 45%;
+    height: 45%;
+    width: 45%;
+    padding: 15px;
 
     background-color: rgb(37, 37, 37);
     }
@@ -589,15 +591,12 @@ flex-direction: column;
         @extend %dflex-center;
         align-items: flex-start;
         flex-wrap: wrap;
-        // min-height: 100vh;
-        // height: 100%;
         width: 1200px;
 
         // background-color: goldenrod;
 
         & img{
             width: 500px;
-            // height: auto;
         }
 
         & #projet_1{
@@ -631,7 +630,6 @@ flex-direction: column;
             // background-color: rgb(0, 41, 128);
             font-size: 0;
             height: 300px;
-
             margin: 10px;
 
             & #titre_projet_2{
@@ -659,7 +657,6 @@ flex-direction: column;
             // background-color: rgb(128, 0, 100);
             font-size: 0;
             height: 300px;
-
             margin: 10px;
 
             & #titre_projet_3{
@@ -687,7 +684,6 @@ flex-direction: column;
             // background-color: rgb(128, 0, 100);
             font-size: 0;
             height: 300px;
-
             margin: 10px;
 
             & #titre_projet_4{

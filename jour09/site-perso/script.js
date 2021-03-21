@@ -197,7 +197,7 @@ function change_css_hover_mouseenter(id_image,id_div ){
 
   $(id_image).css({
     "filter": "blur(8px)",
-    "transform": "scale(1.1)",
+    "transform": "scale(1.05)",
     "transition": "0.4s",
     "cursor": "pointer"});
               
@@ -205,7 +205,7 @@ function change_css_hover_mouseenter(id_image,id_div ){
    $(id_div+" p").css({
     "z-index": "10",
     "opacity": "1",
-    "transform": "scale(1.1)",
+    "transform": "scale(1.05)",
     "transition": "0.4s",
     "cursor": "pointer"});    
 
