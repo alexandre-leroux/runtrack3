@@ -157,118 +157,73 @@ $('#para_4, #dernier_boutton' ).click(function(){
 
 
 
-// -----------------------------------------actions sur vignette rojet voyage
- $("#projets_image-3").click(function(){
-
-  window.open('http://stackoverflow.com/', '_blank')
-
-})
-
- $("#projets_image-3 img, #titre_projet_3, #details_du_projet_3").mouseenter(function(){
-
-  $("#projets_image-3 img").css({
-    "filter": "blur(8px)",
-    "transform": "scale(1.1)",
-    "transition": "0.6s" });
-              
-              
-   $("#projets_image-3 p").css({
-    "z-index": "10",
-    "opacity": "1",
-    "transform": "scale(1.1)",
-    "transition": "0.6s"});      
-              
-})
 
 
-$("#projets_image-3 img,  #titre_projet_3, #details_du_projet_3").mouseleave(function(){
+// -------------------------------------------------------------------------actions sur vignette projet
 
-  $("#projets_image-3 img").css({
-    "filter": "blur(0px)",
-    "transform": "scale(1)",
-    "transition": "0.6s" });
-              
-  $("#projets_image-3 p").css({  
-    "opacity": "0",
-    "transform": "scale(1)",
-    "transition": "0.6s",
-    "z-index": "10" }); 
-              
-})
-
-// -----------------------------------------actions sur vignette projet app fav
  $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").click(function(){
   window.open('http://stackoverflow.com/', '_blank')
 })
- $("#image_projet_2, #titre_projet_12, #despcription_porjet_2").click(function(){
+ $("#image_projet_2, #titre_projet_2, #despcription_porjet_2").click(function(){
   window.open('http://stackoverflow.com/', '_blank')
 })
 
- $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseenter(function(){
 
-  $("#image_projet_1").css({
+function change_css_hover_mouseenter(id_image,id_div ){
+
+  $(id_image).css({
     "filter": "blur(8px)",
     "transform": "scale(1.1)",
     "transition": "0.4s",
     "cursor": "pointer"});
               
               
-   $("#projet_1 p").css({
+   $(id_div+" p").css({
     "z-index": "10",
     "opacity": "1",
     "transform": "scale(1.1)",
     "transition": "0.4s",
-    "cursor": "pointer"});      
+    "cursor": "pointer"});    
+
+}
+function change_css_hover_mouseleave(id_image,id_div ){
+
+
+  $(id_image).css({
+    "filter": "blur(0px)",
+    "transform": "scale(1)",
+    "transition": "0.4s" });
+              
+    $(id_div+" p").css({  
+    "opacity": "0",
+    "transform": "scale(1)",
+    "transition": "0.4s",
+    "z-index": "10" }); 
+
+}
+
+
+ $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseenter(function(){
+
+  change_css_hover_mouseenter("#image_projet_1","#projet_1" )
               
 })
 
 $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseleave(function(){
 
-  $("#image_projet_1").css({
-    "filter": "blur(0px)",
-    "transform": "scale(1)",
-    "transition": "0.4s" });
-              
-  $("#projet_1 p").css({  
-    "opacity": "0",
-    "transform": "scale(1)",
-    "transition": "0.4s",
-    "z-index": "10" }); 
-              
+  change_css_hover_mouseleave("#image_projet_1","#projet_1" )
 })
 
 
- $("#image_projet_2, #titre_projet_2, #despcription_porjet_2").mouseenter(function(){
+$("#image_projet_2, #titre_projet_2, #despcription_porjet_2").mouseenter(function(){
 
-  $("#image_projet_2").css({
-    "filter": "blur(8px)",
-    "transform": "scale(1.1)",
-    "transition": "0.4s",
-    "cursor": "pointer"});
-              
-              
-   $("#projet_2 p").css({
-    "z-index": "10",
-    "opacity": "1",
-    "transform": "scale(1.1)",
-    "transition": "0.4s",
-    "cursor": "pointer"});      
-              
+ change_css_hover_mouseenter("#image_projet_2","#projet_2" )
+             
 })
 
 $("#image_projet_2, #titre_projet_2, #despcription_porjet_2").mouseleave(function(){
 
-  $("#image_projet_2").css({
-    "filter": "blur(0px)",
-    "transform": "scale(1)",
-    "transition": "0.4s" });
-              
-  $("#projet_2 p").css({  
-    "opacity": "0",
-    "transform": "scale(1)",
-    "transition": "0.4s",
-    "z-index": "10" }); 
-              
+ change_css_hover_mouseleave("#image_projet_2","#projet_2" )
 })
 
 
@@ -284,3 +239,21 @@ $("#image_projet_2, #titre_projet_2, #despcription_porjet_2").mouseleave(functio
 
 
 
+
+//  $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseenter(function(){
+
+//   $("#image_projet_1").css({
+//     "filter": "blur(8px)",
+//     "transform": "scale(1.1)",
+//     "transition": "0.4s",
+//     "cursor": "pointer"});
+              
+              
+//    $("#projet_1 p").css({
+//     "z-index": "10",
+//     "opacity": "1",
+//     "transform": "scale(1.1)",
+//     "transition": "0.4s",
+//     "cursor": "pointer"});      
+              
+// })
