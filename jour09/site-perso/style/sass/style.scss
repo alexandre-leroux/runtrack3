@@ -491,6 +491,7 @@ flex-direction: column;
             height: 200px;
             @extend %dflex-center;
             justify-content: space-around;
+            flex-wrap: wrap;
             padding-left: 50px;
             padding-right: 50px;
             // background-color: burlywood;
@@ -521,6 +522,7 @@ flex-direction: column;
                 font-weight: 400;
                 font-size: 2rem;
                 animation-duration: 0.8s;
+                text-align: center;
             }
             & ul{
                 animation-duration: 0.8s;
@@ -534,7 +536,32 @@ flex-direction: column;
 
 
 }
+@media screen and (max-width: 1000px) {
 
+    #logo_languages{
+        height: 400px !important;
+    }
+
+    #conteneur_competences_section_centrale{
+        box-shadow: none !important;
+    }
+    
+  }
+@media screen and (max-width: 850px) {
+
+    #logo_languages{
+        display: none !important;
+    }
+    #conteneur_competences_section_centrale{
+        height: 80% !important;
+        width: 80% !important;
+    }
+    #conteneur_textes_competences{
+        height: 100% !important;
+        width: 100% !important;
+    }
+    
+  }
 // ---------------------------------------------------portfolio
 
 

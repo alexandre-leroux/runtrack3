@@ -389,6 +389,7 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
 #conteneur_competences #conteneur_competences_section_centrale #logo_languages {
   height: 200px;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -416,6 +417,7 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   font-weight: 400;
   font-size: 2rem;
   animation-duration: 0.8s;
+  text-align: center;
 }
 #conteneur_competences #conteneur_competences_section_centrale #conteneur_textes_competences ul {
   animation-duration: 0.8s;
@@ -424,6 +426,30 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 1000px) {
+  #logo_languages {
+    height: 400px !important;
+  }
+
+  #conteneur_competences_section_centrale {
+    box-shadow: none !important;
+  }
+}
+@media screen and (max-width: 850px) {
+  #logo_languages {
+    display: none !important;
+  }
+
+  #conteneur_competences_section_centrale {
+    height: 80% !important;
+    width: 80% !important;
+  }
+
+  #conteneur_textes_competences {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
 #conteneur_portfolio {
   flex-direction: column;
   justify-content: start;
