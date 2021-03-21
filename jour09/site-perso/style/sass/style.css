@@ -423,6 +423,7 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   opacity: 0;
   position: relative;
   text-align: center;
+  font-weight: bold;
   top: 170px;
 }
 #conteneur_portfolio #display_portfolio #projet_1 img {

@@ -197,7 +197,7 @@ $("#projets_image-3 img,  #titre_projet_3, #details_du_projet_3").mouseleave(fun
 })
 
 // -----------------------------------------actions sur vignette projet app fav
- $("#projets_image-2").click(function(){
+ $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").click(function(){
 
   window.open('http://stackoverflow.com/', '_blank')
 
@@ -208,14 +208,16 @@ $("#projets_image-3 img,  #titre_projet_3, #details_du_projet_3").mouseleave(fun
   $("#image_projet_1").css({
     "filter": "blur(8px)",
     "transform": "scale(1.1)",
-    "transition": "0.6s" });
+    "transition": "0.4s",
+    "cursor": "pointer"});
               
               
    $("#projet_1 p").css({
     "z-index": "10",
     "opacity": "1",
     "transform": "scale(1.1)",
-    "transition": "0.6s"});      
+    "transition": "0.4s",
+    "cursor": "pointer"});      
               
 })
 
@@ -225,12 +227,12 @@ $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseleave(functio
   $("#image_projet_1").css({
     "filter": "blur(0px)",
     "transform": "scale(1)",
-    "transition": "0.6s" });
+    "transition": "0.4s" });
               
   $("#projet_1 p").css({  
     "opacity": "0",
     "transform": "scale(1)",
-    "transition": "0.6s",
+    "transition": "0.4s",
     "z-index": "10" }); 
               
 })
