@@ -556,7 +556,7 @@ flex-direction: column;
 .parallax {
     perspective: 1px;
     height: 100vh;
-    // width: 100vw;
+    // width: 70vw;
     overflow-x: hidden;
     overflow-y: auto;
 
@@ -568,14 +568,7 @@ flex-direction: column;
         margin-bottom: 100px;
         background-color: rgb(58, 41, 20);
     }
-    & .images_projets{
-        // width: 600px;
-        // display: block;
-        // z-index: 10;
-        // &:hover{
-        //     transform: scale(2);
-        // }
-    }
+
 
     & .parallax__layer {
         position: absolute;
@@ -615,12 +608,6 @@ flex-direction: column;
 
 }
 
-#projets_image-2{
-    transform: translate(10vw, 20vh);
-
-
-
-}
 
 
 
@@ -635,7 +622,7 @@ flex-direction: column;
         border-radius: 80px;
     }
 
-    & p{
+    & #titre_projet_3{
         opacity: 0;
         margin: 0;
         font-size: 6rem;
@@ -645,8 +632,51 @@ flex-direction: column;
         position: relative;
         top: 225px;
     }
-    & #details_du_projet{
+    & #details_du_projet_3{
+        opacity: 0;
         font-size: 2rem;
+        color: $text_color;
+        position: relative;
+        text-align: center;
+        top: 225px;
+
+    }
+
+}
+
+#projets_image-2 {
+    height: 260px;
+    // transform: translate(100px, 160px);
+    margin-left: 8vw;
+    transition: 0.6s;
+    border-radius: 80px;
+
+    & img{
+        opacity: 0.5;
+        border-radius: 80px;
+    }
+
+    & #titre_projet_2{
+        // opacity: 0;
+        margin: 0;
+        font-size: 4rem;
+        font-weight: 700;
+        color: $text_color;
+        text-align: center;
+        position: relative;
+        top: 190px;
+        left: 190px;
+    }
+    & #details_du_projet_2{
+        // opacity: 0;
+        font-size: 2rem;
+        color: $text_color;
+        // position: relative;
+        text-align: center;
+        position: relative;
+
+        top: 190px;
+        left: 190px;
     }
 
 }
