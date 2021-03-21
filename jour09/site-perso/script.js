@@ -160,13 +160,14 @@ $('#para_4, #dernier_boutton' ).click(function(){
 // -----------------------------------------actions sur vignette rojet voyage
  $("#projets_image-3").click(function(){
 
-
   window.open('http://stackoverflow.com/', '_blank')
+  
 })
 
  $("#projets_image-3 img, p").mouseenter(function(){
 
   $("#projets_image-3 img").css({
+    "filter": "blur(8px)",
     "transform": "scale(1.1)",
     "transition": "0.6s" });
               
@@ -182,13 +183,16 @@ $('#para_4, #dernier_boutton' ).click(function(){
 
 $("#projets_image-3 img, p").mouseleave(function(){
 
-  $("#projets_image-3 img").css({"transform": "scale(1)",
-               "transition": "0.6s" });
+  $("#projets_image-3 img").css({
+    "filter": "blur(0px)",
+    "transform": "scale(1)",
+    "transition": "0.6s" });
               
-  $("#projets_image-3 p").css({  "opacity": "0",
-                                  "transform": "scale(1)",
-                                  "transition": "0.6s",
-                                  "z-index": "10" }); 
+  $("#projets_image-3 p").css({  
+    "opacity": "0",
+    "transform": "scale(1)",
+    "transition": "0.6s",
+    "z-index": "10" }); 
               
 })
 

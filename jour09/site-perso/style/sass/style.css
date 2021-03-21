@@ -437,6 +437,11 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   height: 150px;
   transform: translate(55vw, -5vh);
   transition: 0.6s;
+  border-radius: 80px;
+}
+#projets_image-3 img {
+  opacity: 0.5;
+  border-radius: 80px;
 }
 #projets_image-3 p {
   opacity: 0;
@@ -447,6 +452,9 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   text-align: center;
   position: relative;
   top: 225px;
+}
+#projets_image-3 #details_du_projet {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
