@@ -180,11 +180,13 @@ flex-direction: column;
         margin-left: 90px;
         color: rgb(214, 214, 214);
         font-size: 32px;
+        // white-space: nowrap;
         p{
             text-align: left;
             font-weight: bold;
             font-size: 5rem;
         }
+     
       }
 
     & .text-js{
@@ -223,6 +225,12 @@ flex-direction: column;
 
 
 }
+@media screen and (max-width: 1368px) {
+    .text-js {
+      font-size: 3rem !important;
+    }
+  }
+
 
 // ---------------------------hover lettre accueil
 .effet_lettres{
@@ -363,7 +371,38 @@ flex-direction: column;
     }
 
   }
-  
+  @media screen and (max-width: 1077px) {
+    #para_1, #para_2, #para_3, #para_4{
+        all : initial !important;
+      position: static !important;
+      height: 300px !important;
+      width: 100% !important;
+      background-color: rgb(63, 59, 59) !important;
+      display: flex!important;
+      justify-content: center!important;
+      align-items: center!important;
+      border: solid 1px black !important;
+      top: 0px;
+      left: 0px;
+      
+      & p{
+        all : initial !important;
+        color: $text_color !important;
+        font-size: 4rem !important;
+        text-transform: uppercase !important;
+      }
+
+    }
+    #container{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .text-js, #details_dev{
+
+        display: none;
+    }
+    
+  }
 
 
 // ---------------------------------------------------------------a propos
