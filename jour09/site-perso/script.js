@@ -167,6 +167,12 @@ $('#para_4, #dernier_boutton' ).click(function(){
  $("#image_projet_2, #titre_projet_2, #despcription_porjet_2").click(function(){
   window.open('http://stackoverflow.com/', '_blank')
 })
+ $("#image_projet_3, #titre_projet_3, #despcription_porjet_3").click(function(){
+  window.open('http://stackoverflow.com/', '_blank')
+})
+ $("#image_projet_4, #titre_projet_4, #despcription_porjet_4").click(function(){
+  window.open('http://stackoverflow.com/', '_blank')
+})
 
 
 function change_css_hover_mouseenter(id_image,id_div ){
@@ -202,7 +208,7 @@ function change_css_hover_mouseleave(id_image,id_div ){
 
 }
 
-
+// ----------------projet 1
  $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseenter(function(){
 
   change_css_hover_mouseenter("#image_projet_1","#projet_1" )
@@ -214,7 +220,7 @@ $("#image_projet_1, #titre_projet_1, #despcription_porjet_1").mouseleave(functio
   change_css_hover_mouseleave("#image_projet_1","#projet_1" )
 })
 
-
+// ----------------projet 2
 $("#image_projet_2, #titre_projet_2, #despcription_porjet_2").mouseenter(function(){
 
  change_css_hover_mouseenter("#image_projet_2","#projet_2" )
@@ -226,7 +232,30 @@ $("#image_projet_2, #titre_projet_2, #despcription_porjet_2").mouseleave(functio
  change_css_hover_mouseleave("#image_projet_2","#projet_2" )
 })
 
+// ----------------projet 3
+$("#image_projet_3, #titre_projet_3, #despcription_porjet_3").mouseenter(function(){
 
+ change_css_hover_mouseenter("#image_projet_3","#projet_3" )
+             
+})
+
+$("#image_projet_3, #titre_projet_3, #despcription_porjet_3").mouseleave(function(){
+
+ change_css_hover_mouseleave("#image_projet_3","#projet_3" )
+})
+
+
+// ----------------projet 4
+$("#image_projet_4, #titre_projet_4, #despcription_porjet_4").mouseenter(function(){
+
+ change_css_hover_mouseenter("#image_projet_4","#projet_4" )
+             
+})
+
+$("#image_projet_4, #titre_projet_4, #despcription_porjet_4").mouseleave(function(){
+
+ change_css_hover_mouseleave("#image_projet_4","#projet_4" )
+})
 
 
 
