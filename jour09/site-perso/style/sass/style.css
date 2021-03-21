@@ -564,6 +564,13 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 1260px) {
+  #display_portfolio {
+    width: 90% !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
 #conteneur_contact {
   width: 100%;
   height: 100vh;
@@ -575,14 +582,27 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   border-radius: 20px;
 }
 #conteneur_contact #contact h1 {
+  text-align: center;
   font-size: 5rem;
   color: darkgray;
   margin: 10px;
 }
 #conteneur_contact #contact p {
+  text-align: center;
   font-size: 2rem;
   color: darkgray;
   margin: 10px;
+}
+
+@media screen and (max-width: 845px) {
+  #contact {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 710px) {
+  #contact p {
+    font-size: 1.5rem !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -712,14 +712,16 @@ flex-direction: column;
         }
     }
 
-
-
-
-
-
-
 }
 
+@media screen and (max-width: 1260px){
+
+    #display_portfolio{
+        width: 90% !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
 
 // ------------------------------------------------contact
 
@@ -738,16 +740,29 @@ flex-direction: column;
         border-radius: 20px;
 
         & h1{
-
+            text-align: center;
             font-size: 5rem;
             color: $text_color;
             margin: 10px;
         }
         & p{
+            text-align: center;
             font-size: 2rem;
             color: $text_color;
             margin: 10px;
         }
+    }
+}
+@media screen and (max-width: 845px){
+
+    #contact{
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 710px){
+
+    #contact p{
+        font-size: 1.5rem !important;
     }
 }
 
