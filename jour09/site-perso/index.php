@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Alexandre Leroux - Dévellopeur web</title>
-  <meta name="description" content="Alexandre Leroux - Dévelopeur web, étudiant à LaPlateforme_ Marseille.">
+  <meta name="description" content="Alexandre Leroux - Développeur web, étudiant à LaPlateforme_  Marseille.">
   <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="style/sass/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
@@ -69,7 +69,7 @@
           <p id="text_hover3" class="text-js">étudiant en développement web</p>
         </div>
 
-        <p id="details_dev" class="animate__animated animate__fadeInUp">Dévellopeur Front-end / Back-end</p>
+        <p id="details_dev" class="animate__animated animate__fadeInUp">Développeur Front-end / Back-end</p>
 
       </div>
         

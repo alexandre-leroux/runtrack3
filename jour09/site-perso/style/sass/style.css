@@ -456,6 +456,8 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   flex-direction: column;
   justify-content: start;
   min-height: 100vh;
+  height: 100%;
+  padding-bottom: 100px;
 }
 #conteneur_portfolio h1 {
   text-align: center;
@@ -463,7 +465,6 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   font-size: 3rem;
   font-weight: 700;
   margin-top: 100px;
-  margin-bottom: 50px;
 }
 #conteneur_portfolio #display_portfolio {
   align-items: flex-start;

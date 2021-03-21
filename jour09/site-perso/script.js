@@ -177,7 +177,7 @@ $("#section_centrale").on('click','#image_projet_1, #titre_projet_1, #despcripti
 }  )
 $("#section_centrale").on('click','#image_projet_2, #titre_projet_2, #despcription_porjet_2', function(e){
 
-  window.open('http://stackoverflow.com/', '_blank')
+  window.open('botanique/accueil.html/', '_blank')
 
 }  )
 $("#section_centrale").on('click','#image_projet_3, #titre_projet_3, #despcription_porjet_3', function(e){
