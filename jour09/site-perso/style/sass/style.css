@@ -9,6 +9,7 @@ body {
   background-color: #1d1d1d;
   font-family: "Rajdhani", sans-serif;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 main {
@@ -308,7 +309,7 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
   #para_1 p, #para_2 p, #para_3 p, #para_4 p {
     all: initial !important;
     color: darkgray !important;
-    font-size: 4rem !important;
+    font-size: 3em !important;
     text-transform: uppercase !important;
   }
 
@@ -336,8 +337,8 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
 #a_propos #textes_presentation {
   flex-direction: column;
   justify-content: space-around;
-  height: 45%;
-  width: 45%;
+  height: 60%;
+  width: 60%;
   padding: 15px;
   background-color: #252525;
 }
@@ -385,23 +386,24 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
 #conteneur_competences #conteneur_competences_section_centrale {
   box-shadow: 10px 10px 20px black;
   width: 60%;
-  height: 60%;
+  height: 80%;
   border-radius: 30px;
 }
 #conteneur_competences #conteneur_competences_section_centrale #logo_languages {
-  height: 200px;
+  height: 300px;
   justify-content: space-around;
   flex-wrap: wrap;
   padding-left: 50px;
   padding-right: 50px;
 }
 #conteneur_competences #conteneur_competences_section_centrale #logo_languages img {
-  width: 90px;
+  width: 80px;
   animation-duration: 0.8s;
+  margin: 10px;
 }
 #conteneur_competences #conteneur_competences_section_centrale #conteneur_textes_competences {
   width: 100%;
-  height: 60%;
+  height: 40%;
   background-color: #141414;
   flex-direction: column;
   justify-content: space-around;
@@ -411,13 +413,13 @@ header #nav_et_rs #div_reseaux_sociaux a img:hover {
 #conteneur_competences #conteneur_competences_section_centrale #conteneur_textes_competences h1 {
   text-align: center;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   animation-duration: 0.8s;
 }
 #conteneur_competences #conteneur_competences_section_centrale #conteneur_textes_competences h2 {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.8rem;
   animation-duration: 0.8s;
   text-align: center;
 }

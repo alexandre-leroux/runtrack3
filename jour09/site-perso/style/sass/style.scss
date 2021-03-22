@@ -12,6 +12,7 @@ body{
     background-color:#1d1d1d ;
     font-family: 'Rajdhani', sans-serif;
     height: 100vh;
+    overflow-x: hidden; 
 }
 main{
     display: flex;
@@ -389,7 +390,7 @@ flex-direction: column;
       & p{
         all : initial !important;
         color: $text_color !important;
-        font-size: 4rem !important;
+        font-size: 3em !important;
         text-transform: uppercase !important;
       }
 
@@ -424,8 +425,8 @@ flex-direction: column;
     @extend %dflex-center;
     flex-direction: column;
     justify-content: space-around;
-    height: 45%;
-    width: 45%;
+    height: 60%;
+    width: 60%;
     padding: 15px;
 
     background-color: rgb(37, 37, 37);
@@ -485,12 +486,12 @@ flex-direction: column;
     & #conteneur_competences_section_centrale{
         box-shadow: 10px 10px 20px rgb(0, 0, 0);
         width: 60%;
-        height: 60%;
+        height: 80%;
         border-radius: 30px;
-        // background-color: rgb(46, 46, 46);
+        // background-color: rgb(199, 41, 41);
 
         & #logo_languages{
-            height: 200px;
+            height: 300px;
             @extend %dflex-center;
             justify-content: space-around;
             flex-wrap: wrap;
@@ -498,14 +499,15 @@ flex-direction: column;
             padding-right: 50px;
             // background-color: burlywood;
             & img{
-                width: 90px;
+                width: 80px;
                 animation-duration: 0.8s;
+                margin: 10px;
             }
             
         }
         & #conteneur_textes_competences{
             width: 100%;
-            height: 60%;
+            height: 40%;
             background-color:#141414;
             @extend %dflex-center;
             flex-direction: column;
@@ -516,13 +518,13 @@ flex-direction: column;
                 // background-color: chartreuse;
                 text-align: center;
                 font-weight: 700;
-                font-size: 3rem;
+                font-size: 2.5rem;
                 text-transform: uppercase;
                 animation-duration: 0.8s;
             }
             & h2{
                 font-weight: 400;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 animation-duration: 0.8s;
                 text-align: center;
             }
@@ -576,6 +578,8 @@ flex-direction: column;
     min-height: 100vh;
     height: 100%;
     padding-bottom: 100px;
+
+    // width: 90%;
 
     & h1{
         text-align: center;
